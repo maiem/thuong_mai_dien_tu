@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.6;
 }
 
 html, body {
@@ -126,7 +129,7 @@ footer .footer-top .container .footer-top-input-box button {
 }
 
 footer .footer-top .container .footer-top-input-box button:hover {
-  background: black;
+  background: #555555;
 }
 
 footer .footer-top .container .footer-top-contact-us {

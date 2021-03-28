@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 
-.slider{
+.slider {
   .slide-show {
     .item {
       img {
@@ -20,26 +20,27 @@
     }
   }
 
-  .support-shipping{
+  .support-shipping {
     padding: 20px;
-    background:rgba(206, 199, 199, 0.253);
-    .container{
+    background: rgba(206, 199, 199, 0.253);
+
+    .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      .shipping{
+      .shipping {
         display: flex;
 
-        .support-shipping-description{
+        .support-shipping-description {
           padding: 10px;
 
-          p{
+          p {
             text-transform: capitalize;
             font-size: 14px;
             color: rgb(128, 140, 141);
-            
-            strong{
+
+            strong {
               color: $secondaryColor;
             }
           }
@@ -49,59 +50,103 @@
   }
 }
 
-
-.difference{
-  .tittle{
-    padding: 50px 0;
-    text-align: center;
-
-    h2{
-      color: $primaryColor;
-      font-size: 30px;
-      padding-bottom: 15px;
-
-      &::first-letter{
-        text-transform: capitalize;
-      }
-    }
-
-    p{
-      color: rgb(128, 140, 141);;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+.difference {
+  .tittle-center {
+    @include tittle-center;
   }
 
-  .support-block{
-    .container{
+  .support-block {
+    .container {
       text-align: center;
-      ul{
+
+      ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
-        li{
-          flex-basis: 33%;
+        li {
+          .section-box {
+            padding: 20px 15px;
+            text-align: center;
 
-          .support-block-section{
-            width: 200px;
-            height: 300px;
-            padding: 20px;
-            .image-box{
-              //border: 10px solid $primaryColor;
-              
-              img{
-                border: 20px solid rgb(128, 140, 141);
-                border-radius: 50%;
-              }
-            }
+            @include section-box(true);
           }
         }
       }
     }
   }
+}
 
+.face-mark {
+  .tittle-center {
+    @include tittle-center;
+  }
+
+  .support-face-mark {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .support-face-mark-left {
+        text-align: center;
+
+        .section-box {
+          padding: 0 20px 30px;
+          @include section-box(false);
+        }
+      }
+
+      .support-face-mark-center {
+        img {
+          max-width: 100%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .support-face-mark-right {
+        text-align: center;
+
+        .section-box {
+          padding: 20px;
+          @include section-box(false);
+        }
+      }
+    }
+  }
+}
+
+.equipment {
+  margin-bottom: 30px;
+  
+  .tittle-center {
+    @include tittle-center;
+  }
+
+  .support-equipment {
+    .container {
+      //text-align: center;
+      display: flex;
+      justify-content: space-between;
+
+      .support-equipment-left{
+        flex-basis: 50%;
+
+        .section-box{
+          @include section-box(false);
+        }
+      }
+
+      .support-equipment-right{
+        flex-basis: 50%;
+
+        .section-box{
+          @include section-box(false);
+        }
+      }
+    }
+  }
 }
 
 .back-to-top {

@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.6;
 }
 
 html, body {
@@ -89,22 +92,22 @@ button:focus, input:focus {
   color: #555555;
 }
 
-.difference .tittle {
+.difference .tittle-center {
   padding: 50px 0;
   text-align: center;
 }
 
-.difference .tittle h2 {
+.difference .tittle-center h2 {
   color: #57b1ba;
   font-size: 30px;
   padding-bottom: 15px;
 }
 
-.difference .tittle h2::first-letter {
+.difference .tittle-center h2::first-letter {
   text-transform: capitalize;
 }
 
-.difference .tittle p {
+.difference .tittle-center p {
   color: #808c8d;
   font-size: 16px;
   letter-spacing: 2px;
@@ -119,6 +122,74 @@ button:focus, input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.difference .support-block .container ul li .section-box {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.difference .support-block .container ul li .section-box img {
+  max-width: 100%;
+  border: 20px solid rgba(206, 199, 199, 0.253);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border-radius: 50%;
+}
+
+.difference .support-block .container ul li .section-box img:hover {
+  background: #57b1ba;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.difference .support-block .container ul li .section-box .description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #555555;
+}
+
+.difference .support-block .container ul li .section-box .description h3::first-letter {
+  text-transform: capitalize;
+}
+
+.difference .support-block .container ul li .section-box .description p {
+  color: #555555;
+  font-weight: 600;
+}
+
+.face-mark .tittle-center {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.face-mark .tittle-center h2 {
+  color: #57b1ba;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.face-mark .tittle-center h2::first-letter {
+  text-transform: capitalize;
+}
+
+.face-mark .tittle-center p {
+  color: #808c8d;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.face-mark .support-face-mark .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -127,20 +198,151 @@ button:focus, input:focus {
           align-items: center;
 }
 
-.difference .support-block .container ul li {
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+.face-mark .support-face-mark .container .support-face-mark-left {
+  text-align: center;
 }
 
-.difference .support-block .container ul li .support-block-section {
-  width: 200px;
-  height: 300px;
+.face-mark .support-face-mark .container .support-face-mark-left .section-box {
+  padding: 0 20px 30px;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-left .section-box img {
+  max-width: 100%;
+  border: none;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-left .section-box .description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #555555;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-left .section-box .description h3::first-letter {
+  text-transform: capitalize;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-left .section-box .description p {
+  color: #555555;
+  font-weight: 600;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-center img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-right {
+  text-align: center;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-right .section-box {
   padding: 20px;
 }
 
-.difference .support-block .container ul li .support-block-section .image-box img {
-  border: 20px solid #808c8d;
-  border-radius: 50%;
+.face-mark .support-face-mark .container .support-face-mark-right .section-box img {
+  max-width: 100%;
+  border: none;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-right .section-box .description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #555555;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-right .section-box .description h3::first-letter {
+  text-transform: capitalize;
+}
+
+.face-mark .support-face-mark .container .support-face-mark-right .section-box .description p {
+  color: #555555;
+  font-weight: 600;
+}
+
+.equipment {
+  margin-bottom: 30px;
+}
+
+.equipment .tittle-center {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.equipment .tittle-center h2 {
+  color: #57b1ba;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.equipment .tittle-center h2::first-letter {
+  text-transform: capitalize;
+}
+
+.equipment .tittle-center p {
+  color: #808c8d;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.equipment .support-equipment .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.equipment .support-equipment .container .support-equipment-left {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.equipment .support-equipment .container .support-equipment-left .section-box img {
+  max-width: 100%;
+  border: none;
+}
+
+.equipment .support-equipment .container .support-equipment-left .section-box .description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #555555;
+}
+
+.equipment .support-equipment .container .support-equipment-left .section-box .description h3::first-letter {
+  text-transform: capitalize;
+}
+
+.equipment .support-equipment .container .support-equipment-left .section-box .description p {
+  color: #555555;
+  font-weight: 600;
+}
+
+.equipment .support-equipment .container .support-equipment-right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.equipment .support-equipment .container .support-equipment-right .section-box img {
+  max-width: 100%;
+  border: none;
+}
+
+.equipment .support-equipment .container .support-equipment-right .section-box .description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #555555;
+}
+
+.equipment .support-equipment .container .support-equipment-right .section-box .description h3::first-letter {
+  text-transform: capitalize;
+}
+
+.equipment .support-equipment .container .support-equipment-right .section-box .description p {
+  color: #555555;
+  font-weight: 600;
 }
 
 .back-to-top {
