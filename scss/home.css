@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+button, input {
+  border: none;
+}
+
+button:focus, input:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+*::-moz-selection {
+  color: white;
+  background: pink;
+}
+
+*::selection {
+  color: white;
+  background: pink;
+}
+
+* {
+  font-family: "Cabin", sans-serif;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100vw;
+  background: white;
+  position: fixed;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logo a {
+  padding: 15px;
+}
+
+header .container .logo a img {
+  width: 100%;
+  height: 100%;
+}
+
+header .container .main-menu nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .main-menu nav > ul > li a {
+  padding: 20px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+header .container .main-menu nav > ul > li a:last-child {
+  padding-right: 0;
+}
+
+header .container .main-menu nav > ul > li a.active {
+  color: #57b1ba;
+}
+
+header .container .main-menu nav > ul > li a:hover {
+  color: #57b1ba;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+header .container .icon-menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .icon-menu nav ul li {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+header .container .icon-menu nav ul li a {
+  padding: 25px;
+}
+
+header .container .icon-menu nav ul li a:last-child {
+  padding-right: 0;
+}
+
+header .container .icon-menu nav ul li a.active {
+  color: #57b1ba;
+}
+
+header .container .icon-menu nav ul li a i {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555555;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+header .container .icon-menu nav ul li a i:hover {
+  color: #57b1ba;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.slide-show .item img {
+  width: 100%;
+  height: 70%;
+}
+
+footer {
+  background: #f7f8fa;
+}
+
+footer .footer-top {
+  padding: 50px 0;
+}
+
+footer .footer-top .container {
+  text-align: center;
+  position: relative;
+}
+
+footer .footer-top .container .footer-top-description h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #57b1ba;
+  margin-bottom: 40px;
+}
+
+footer .footer-top .container .footer-top-description p {
+  width: 550px;
+  margin: 20px auto 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+}
+
+footer .footer-top .container .footer-top-input-box {
+  padding-top: 30px;
+}
+
+footer .footer-top .container .footer-top-input-box input {
+  width: 650px;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 8px;
+}
+
+footer .footer-top .container .footer-top-input-box input::-webkit-input-placeholder {
+  text-align: start;
+}
+
+footer .footer-top .container .footer-top-input-box input:-ms-input-placeholder {
+  text-align: start;
+}
+
+footer .footer-top .container .footer-top-input-box input::-ms-input-placeholder {
+  text-align: start;
+}
+
+footer .footer-top .container .footer-top-input-box input::placeholder {
+  text-align: start;
+}
+
+footer .footer-top .container .footer-top-input-box input:focus {
+  border: 1px solid #57b1ba;
+}
+
+footer .footer-top .container .footer-top-input-box button {
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #57b1ba;
+  -webkit-transform: translateX(-52px);
+          transform: translateX(-52px);
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+}
+
+footer .footer-top .container .footer-top-input-box button:hover {
+  background: #555555;
+}
+
+footer .footer-top .container .footer-top-contact-us {
+  padding-top: 20px;
+}
+
+footer .footer-top .container .footer-top-contact-us a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555555;
+  padding: 10px;
+}
+
+footer .footer-top .container .footer-top-contact-us a:last-child {
+  padding-right: 0;
+}
+
+footer .footer-top .container .footer-top-contact-us a:hover {
+  color: #a09c9c;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+footer .footer-bottom .container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-bottom .container .logo a img {
+  width: 80%;
+  height: 80%;
+}
+
+footer .footer-bottom .container .logo p {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.back-to-top {
+  position: relative;
+}
+
+.back-to-top a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #57b1ba;
+  position: fixed;
+  bottom: 20px;
+  right: 2px;
+}
+
+.back-to-top a::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%) rotate(45deg);
+          transform: translate(50%, -50%) rotate(45deg);
+}
+/*# sourceMappingURL=home.css.map */

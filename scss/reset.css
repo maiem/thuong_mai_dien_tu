@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+button, input {
+  border: none;
+}
+
+button:focus, input:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+*::-moz-selection {
+  color: white;
+  background: pink;
+}
+
+*::selection {
+  color: white;
+  background: pink;
+}
+/*# sourceMappingURL=reset.css.map */
