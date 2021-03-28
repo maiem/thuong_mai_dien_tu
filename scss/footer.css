@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+button, input {
+  border: none;
+}
+
+button:focus, input:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+*::-moz-selection {
+  color: white;
+  background: pink;
+}
+
+*::selection {
+  color: white;
+  background: pink;
+}
+
+footer .footer-top {
+  padding: 50px 0;
+  background-image: url("../images/bg_footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+footer .footer-top::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.863);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer .footer-top .container {
+  text-align: center;
+  position: relative;
+}
+
+footer .footer-top .container .footer-top-description h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #57b1ba;
+  margin-bottom: 40px;
+}
+
+footer .footer-top .container .footer-top-description p {
+  width: 550px;
+  margin: 20px auto 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+}
+
+footer .footer-top .container .footer-top-input-box {
+  padding-top: 30px;
+}
+
+footer .footer-top .container .footer-top-input-box input {
+  width: 400px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 50px;
+}
+
+footer .footer-top .container .footer-top-input-box input::-webkit-input-placeholder {
+  text-align: start;
+}
+
+footer .footer-top .container .footer-top-input-box input:-ms-input-placeholder {
+  text-align: start;
+}
+
+footer .footer-top .container .footer-top-input-box input::-ms-input-placeholder {
+  text-align: start;
+}
+
+footer .footer-top .container .footer-top-input-box input::placeholder {
+  text-align: start;
+}
+
+footer .footer-top .container .footer-top-input-box input:focus {
+  border: 1px solid #57b1ba;
+  background: white;
+  color: white;
+}
+
+footer .footer-top .container .footer-top-input-box button {
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  padding-right: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: #57b1ba;
+  -webkit-transform: translateX(-52px);
+          transform: translateX(-52px);
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+}
+
+footer .footer-top .container .footer-top-input-box button:hover {
+  background: black;
+}
+
+footer .footer-top .container .footer-top-contact-us {
+  padding-top: 20px;
+}
+
+footer .footer-top .container .footer-top-contact-us a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555555;
+  padding: 10px;
+}
+
+footer .footer-top .container .footer-top-contact-us a:last-child {
+  padding-right: 0;
+}
+
+footer .footer-top .container .footer-top-contact-us a:hover {
+  color: white;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+footer .footer-bottom .container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-bottom .container .logo a img {
+  width: 80%;
+  height: 80%;
+}
+
+footer .footer-bottom .container .logo p {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+}
+/*# sourceMappingURL=footer.css.map */

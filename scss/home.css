@@ -47,70 +47,17 @@ button:focus, input:focus {
   margin: 0 auto;
 }
 
-header {
-  width: 100vw;
-  background: white;
-  position: fixed;
-}
-
-header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .container .logo a {
-  padding: 15px;
-}
-
-header .container .logo a img {
+.slider .slide-show .item img {
+  max-width: 100%;
   width: 100%;
-  height: 100%;
 }
 
-header .container .main-menu nav > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .container .main-menu nav > ul > li a {
+.slider .support-shipping {
   padding: 20px;
-  text-transform: capitalize;
-  font-size: 14px;
-  font-weight: 500;
-  color: #555555;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  background: rgba(206, 199, 199, 0.253);
 }
 
-header .container .main-menu nav > ul > li a:last-child {
-  padding-right: 0;
-}
-
-header .container .main-menu nav > ul > li a.active {
-  color: #57b1ba;
-}
-
-header .container .main-menu nav > ul > li a:hover {
-  color: #57b1ba;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-header .container .icon-menu nav ul {
+.slider .support-shipping .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,143 +69,53 @@ header .container .icon-menu nav ul {
           align-items: center;
 }
 
-header .container .icon-menu nav ul li {
-  text-align: center;
-  position: relative;
-  cursor: pointer;
+.slider .support-shipping .container .shipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header .container .icon-menu nav ul li a {
-  padding: 25px;
-}
-
-header .container .icon-menu nav ul li a:last-child {
-  padding-right: 0;
-}
-
-header .container .icon-menu nav ul li a.active {
-  color: #57b1ba;
-}
-
-header .container .icon-menu nav ul li a i {
-  font-size: 18px;
-  font-weight: 500;
-  color: #555555;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-header .container .icon-menu nav ul li a i:hover {
-  color: #57b1ba;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.slide-show .item img {
-  width: 100%;
-  height: 70%;
-}
-
-footer {
-  background: #f7f8fa;
-}
-
-footer .footer-top {
-  padding: 50px 0;
-}
-
-footer .footer-top .container {
-  text-align: center;
-  position: relative;
-}
-
-footer .footer-top .container .footer-top-description h4 {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 600;
-  color: #57b1ba;
-  margin-bottom: 40px;
-}
-
-footer .footer-top .container .footer-top-description p {
-  width: 550px;
-  margin: 20px auto 0;
-  font-size: 14px;
-  font-weight: 500;
-  color: #555555;
-}
-
-footer .footer-top .container .footer-top-input-box {
-  padding-top: 30px;
-}
-
-footer .footer-top .container .footer-top-input-box input {
-  width: 650px;
-  height: 40px;
-  padding-left: 20px;
-  border-radius: 8px;
-}
-
-footer .footer-top .container .footer-top-input-box input::-webkit-input-placeholder {
-  text-align: start;
-}
-
-footer .footer-top .container .footer-top-input-box input:-ms-input-placeholder {
-  text-align: start;
-}
-
-footer .footer-top .container .footer-top-input-box input::-ms-input-placeholder {
-  text-align: start;
-}
-
-footer .footer-top .container .footer-top-input-box input::placeholder {
-  text-align: start;
-}
-
-footer .footer-top .container .footer-top-input-box input:focus {
-  border: 1px solid #57b1ba;
-}
-
-footer .footer-top .container .footer-top-input-box button {
-  cursor: pointer;
-  width: 50px;
-  height: 40px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  background: #57b1ba;
-  -webkit-transform: translateX(-52px);
-          transform: translateX(-52px);
-  text-transform: uppercase;
-  font-size: 14px;
-  color: white;
-}
-
-footer .footer-top .container .footer-top-input-box button:hover {
-  background: #555555;
-}
-
-footer .footer-top .container .footer-top-contact-us {
-  padding-top: 20px;
-}
-
-footer .footer-top .container .footer-top-contact-us a {
-  font-size: 16px;
-  font-weight: 600;
-  color: #555555;
+.slider .support-shipping .container .shipping .support-shipping-description {
   padding: 10px;
 }
 
-footer .footer-top .container .footer-top-contact-us a:last-child {
-  padding-right: 0;
+.slider .support-shipping .container .shipping .support-shipping-description p {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #808c8d;
 }
 
-footer .footer-top .container .footer-top-contact-us a:hover {
-  color: #a09c9c;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+.slider .support-shipping .container .shipping .support-shipping-description p strong {
+  color: #555555;
 }
 
-footer .footer-bottom .container .logo {
+.difference .tittle {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.difference .tittle h2 {
+  color: #57b1ba;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.difference .tittle h2::first-letter {
+  text-transform: capitalize;
+}
+
+.difference .tittle p {
+  color: #808c8d;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.difference .support-block .container {
+  text-align: center;
+}
+
+.difference .support-block .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,16 +127,20 @@ footer .footer-bottom .container .logo {
           align-items: center;
 }
 
-footer .footer-bottom .container .logo a img {
-  width: 80%;
-  height: 80%;
+.difference .support-block .container ul li {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
 }
 
-footer .footer-bottom .container .logo p {
-  text-transform: capitalize;
-  font-size: 14px;
-  font-weight: 400;
-  color: #555555;
+.difference .support-block .container ul li .support-block-section {
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+}
+
+.difference .support-block .container ul li .support-block-section .image-box img {
+  border: 20px solid #808c8d;
+  border-radius: 50%;
 }
 
 .back-to-top {
