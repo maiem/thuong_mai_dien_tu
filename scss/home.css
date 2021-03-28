@@ -298,6 +298,7 @@ button:focus, input:focus {
 .equipment .support-equipment .container .support-equipment-left {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  padding-right: 50px;
 }
 
 .equipment .support-equipment .container .support-equipment-left .section-box img {
