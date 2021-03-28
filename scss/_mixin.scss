@@ -90,7 +90,6 @@
 }
 
 @mixin section-box($border) {
-
   img {
     max-width: 100%;
 
@@ -103,7 +102,6 @@
         background: $primaryColor;
         transition: all 0.2s ease-in;
       }
-
     } @else {
       border: none;
     }
@@ -123,6 +121,203 @@
     p {
       color: $secondaryColor;
       font-weight: 600;
+    }
+  }
+}
+
+@mixin right-text-slide{
+
+  @keyframes translate-right-h3 {
+    0% {
+      right: 0;
+      top: 25%;
+    }
+
+    50% {
+      right: 10%;
+      top: 25%;
+    }
+
+    100% {
+      right: 20%;
+      top: 25%;
+    }
+  }
+
+  @keyframes translate-right-h2 {
+    0% {
+      right: 0;
+      top: 35%;
+    }
+
+    50% {
+      right: 15%;
+      top: 35%;
+    }
+
+    100% {
+      right: 12%;
+      top: 35%;
+    }
+  }
+
+  @keyframes translate-right-a {
+    0% {
+      right: 0;
+      top: 60%;
+    }
+
+    50% {
+      right: 5%;
+      top: 60%;
+    }
+
+    100% {
+      right: 17%;
+      top: 60%;
+    }
+  }
+
+  h3 {
+    position: absolute;
+
+    color: $primaryColor;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    animation: translate-right-h3 1s linear;
+    animation-fill-mode: forwards;
+  }
+
+  h2 {
+    position: absolute;
+    color: $secondaryColor;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1;
+
+    animation: translate-right-h2 1.2s linear;
+    animation-fill-mode: forwards;
+  }
+
+  a{
+    position: absolute;
+
+    padding: 10px 35px;
+    border-radius: 8px 18px;
+    background: $primaryColor;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+
+    animation: translate-right-a 1s linear;
+    animation-fill-mode: forwards;
+
+    
+    &:hover{
+      background: $secondaryColor;
+      transition: all .4s ease-in;
+    }
+  }
+}
+
+@mixin left-text-slide {
+  @keyframes translate-h3 {
+    0% {
+      left: 0;
+      top: 25%;
+    }
+
+    50% {
+      left: 10%;
+      top: 25%;
+    }
+
+    100% {
+      left: 20%;
+      top: 25%;
+    }
+  }
+
+  @keyframes translate-h2 {
+    0% {
+      left: 0;
+      top: 35%;
+    }
+
+    50% {
+      left: 18%;
+      top: 35%;
+    }
+
+    100% {
+      left: 16%;
+      top: 35%;
+    }
+  }
+
+  @keyframes translate-a {
+    0% {
+      left: 0;
+      top: 60%;
+    }
+
+    50% {
+      left: 10%;
+      top: 60%;
+    }
+
+    100% {
+      left: 20%;
+      top: 60%;
+    }
+  }
+
+  h3 {
+    position: absolute;
+
+    color: $primaryColor;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    animation: translate-h3 1s linear;
+    animation-fill-mode: forwards;
+  }
+
+  h2 {
+    position: absolute;
+    color: $secondaryColor;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1;
+
+    animation: translate-h2 1.2s linear;
+    animation-fill-mode: forwards;
+  }
+
+  a{
+    position: absolute;
+
+    padding: 10px 35px;
+    border-radius: 8px 18px;
+    background: $primaryColor;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: all .4s ease-in;
+
+    animation: translate-a 1s linear;
+    animation-fill-mode: forwards;
+
+    &:hover{
+      background: $secondaryColor;
+      transition: all .4s ease-in;
     }
   }
 }

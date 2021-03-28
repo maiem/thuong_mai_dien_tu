@@ -1,9 +1,18 @@
 @import 'reset';
 
 header {
-  width: 100vw;
   background: white;
-  position: fixed;
+  //position: fixed;
+  
+  &::before{
+    content: "";
+    width: 100%;
+
+    box-shadow: 0 0 2px 1px rgba($color: $secondaryColor, $alpha: 0.03);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 
   .container {
     display: flex;

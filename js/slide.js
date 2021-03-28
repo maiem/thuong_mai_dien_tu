@@ -1,16 +1,11 @@
-var slideIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("item");
-
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  slideIndex++;
-  
-  if (slideIndex > x.length) {slideIndex = 1} 
-  x[slideIndex-1].style.display = "block"; 
-  setTimeout(carousel, 2000); 
-}
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    autoplayTimeout:5000,
+    dots:false,
+    items:1,
+    nav:true,
+    navText: ['<i class="fas fa-chevron-left"></i>'
+              , '<i class="fas fa-chevron-right"></i>']
+  });
+});
