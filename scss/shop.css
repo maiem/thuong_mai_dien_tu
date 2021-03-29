@@ -137,6 +137,10 @@ button:focus, input:focus {
   transition: all 0.3s ease-in;
 }
 
+.list-products .container #myList li .product-box {
+  border: 1px solid #e7f2f0;
+}
+
 .list-products .container #myList li .product-box .product-image img {
   max-width: 100%;
   width: 100%;
