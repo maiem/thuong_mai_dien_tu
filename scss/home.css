@@ -1,9 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Cabin", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.6;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
 }
 
 html, body {
@@ -39,15 +45,6 @@ button:focus, input:focus {
 *::selection {
   color: white;
   background: pink;
-}
-
-* {
-  font-family: "Cabin", sans-serif;
-}
-
-.container {
-  width: 1100px;
-  margin: 0 auto;
 }
 
 .slider .slide-show .child-slide {
@@ -179,7 +176,7 @@ button:focus, input:focus {
 .slider .slide-show .left a {
   position: absolute;
   padding: 10px 35px;
-  border-radius: 8px 18px;
+  border-radius: 8px;
   background: #57b1ba;
   color: white;
   font-size: 18px;
@@ -202,6 +199,7 @@ button:focus, input:focus {
   position: absolute;
   right: 50%;
   top: 25%;
+  padding-bottom: 50px;
   -webkit-transform: translate(50%, -25%);
           transform: translate(50%, -25%);
   color: #57b1ba;
@@ -231,7 +229,7 @@ button:focus, input:focus {
   -webkit-transform: translate(50%, -60%);
           transform: translate(50%, -60%);
   padding: 10px 35px;
-  border-radius: 8px 18px;
+  border-radius: 8px;
   background: #57b1ba;
   color: white;
   font-size: 18px;
@@ -365,7 +363,7 @@ button:focus, input:focus {
 .slider .slide-show .right a {
   position: absolute;
   padding: 10px 35px;
-  border-radius: 8px 18px;
+  border-radius: 8px;
   background: #57b1ba;
   color: white;
   font-size: 18px;
@@ -672,7 +670,7 @@ button:focus, input:focus {
 .equipment .support-equipment .container .support-equipment-left {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding: 20px;
+  padding-right: 20px;
 }
 
 .equipment .support-equipment .container .support-equipment-left .section-box img {
