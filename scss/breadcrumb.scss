@@ -1,0 +1,42 @@
+@import 'reset';
+
+.breadcrumb {
+    background-image: url("../images/breadcrumb_bg_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    padding: 25px 0;
+
+    .container {
+      text-align: center;
+  
+      h2 {
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+        padding: 10px 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+  
+      .small-breadcrumb {
+        a {
+          color: white;
+          text-transform: capitalize;
+          transition: all 0.2s ease-in;
+  
+          &:hover {
+            color: $primaryColor;
+            transition: all 0.2s ease-in;
+          }
+        }
+  
+        span {
+          padding-left: 8px;
+          color: white;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  
