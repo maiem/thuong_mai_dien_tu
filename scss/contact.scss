@@ -1,0 +1,149 @@
+@import "reset";
+@import "mixin";
+
+.map {
+  .container {
+    iframe {
+      margin: 50px 0;
+      width: 100%;
+      height: 500px;
+    }
+  }
+}
+
+.contact-address {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    .section-box {
+      flex-basis: 31%;
+      border: 1px solid $secondaryColor;
+      padding: 30px 0;
+      margin-bottom: 30px;
+      transition: all 0.4s ease-in;
+
+      .icon {
+        i {
+          color: white;
+          background: $secondaryColor;
+          padding: 10px;
+          font-size: 30px;
+          border-radius: 50%;
+        }
+      }
+
+      @include section-box(false);
+
+      &:hover {
+        border: 1px solid $primaryColor;
+
+        .icon {
+          i {
+            background: $primaryColor;
+            transition: all 0.4s ease-in;
+          }
+        }
+
+        .description {
+          h3 {
+            color: $primaryColor;
+            transition: all 0.4s ease-in;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-form {
+  .container {
+    text-align: center;
+
+    h3 {
+      margin-top: 15px;
+      color: $primaryColor;
+      font-size: 30px;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+
+    form {
+      margin: 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      input,
+      textarea,
+      button {
+        width: 700px;
+        height: 50px;
+        border: 1px solid rgb(231, 242, 240);
+        padding-left: 20px;
+        margin-bottom: 25px;
+
+        &::placeholder {
+          font-size: 17px;
+          text-transform: capitalize;
+        }
+
+        &:focus {
+          border: 1px solid #3ed4e257;
+        }
+      }
+
+      textarea {
+        height: 150px;
+      }
+
+      button {
+        background: $primaryColor;
+        color: white;
+        font-size: 17px;
+        text-transform: capitalize;
+        border-radius: 4px;
+
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          background: #33858d;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+}
+.back-to-top {
+  position: relative;
+
+  a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $primaryColor;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%) rotate(45deg);
+    }
+  }
+}

@@ -522,6 +522,7 @@ button:focus, input:focus {
 }
 
 .difference .support-block .container ul li .section-box .description h3 {
+  padding-top: 15px;
   font-size: 20px;
   font-weight: 700;
   color: #555555;
@@ -584,6 +585,7 @@ button:focus, input:focus {
 }
 
 .face-mark .support-face-mark .container .support-face-mark-left .section-box .description h3 {
+  padding-top: 15px;
   font-size: 20px;
   font-weight: 700;
   color: #555555;
@@ -618,6 +620,7 @@ button:focus, input:focus {
 }
 
 .face-mark .support-face-mark .container .support-face-mark-right .section-box .description h3 {
+  padding-top: 15px;
   font-size: 20px;
   font-weight: 700;
   color: #555555;
@@ -679,6 +682,7 @@ button:focus, input:focus {
 }
 
 .equipment .support-equipment .container .support-equipment-left .section-box .description h3 {
+  padding-top: 15px;
   font-size: 20px;
   font-weight: 700;
   color: #555555;
@@ -704,6 +708,7 @@ button:focus, input:focus {
 }
 
 .equipment .support-equipment .container .support-equipment-right .section-box .description h3 {
+  padding-top: 15px;
   font-size: 20px;
   font-weight: 700;
   color: #555555;

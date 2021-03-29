@@ -112,6 +112,10 @@ button:focus, input:focus {
   color: #57b1ba;
 }
 
+.customers-login .container form #create-new-login a {
+  text-decoration: underline;
+}
+
 .customers-login .container form p input {
   background: #57b1ba;
   color: white;

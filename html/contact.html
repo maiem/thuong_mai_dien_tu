@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account - Medical</title>
+    <title>Contact - Medical</title>
 
     <link rel="stylesheet" href="../scss/reset.css">
-    <link rel="stylesheet" href="../scss/account.css">
+    <link rel="stylesheet" href="../scss/contact.css">
     <link rel="stylesheet" href="../scss/header.css">
     <link rel="stylesheet" href="../scss/footer.css">
     <link rel="stylesheet" href="../scss/breadcrumb.css">
@@ -22,6 +23,7 @@
     <link rel="shortcut icon"
         href="//cdn.shopify.com/s/files/1/0396/3509/1612/t/3/assets/favicon.png?v=8890247597553443810" type="image/png">
 </head>
+
 <body>
     <header id="header">
         <div class="container">
@@ -73,7 +75,7 @@
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="account.html">
                                 <i class="far fa-user"></i>
                             </a>
                         </li>
@@ -85,38 +87,85 @@
 
     <section class="breadcrumb">
         <div class="container">
-            <h2>tài khoản</h2>
+            <h2>liên hệ</h2>
 
             <div class="small-breadcrumb">
                 <a href="../index.html">trang chủ</a>
                 <span>/</span>
-                <span>tài khoản</span>
+                <span>liên hệ</span>
             </div>
         </div>
     </section>
 
-    <section class="customers-login">
-       <div class="container">
-        <form action="">
-            <input type="email" placeholder="email">
-
-            <input type="password" name="" id="" placeholder="mật khẩu">
-
-            <p>
-                <a href="">quên mật khẩu ?</a>
-            </p>
-
-            <p>
-                <input type="submit" value="đăng nhập">
-            </p>
-
-            <p id="create-new-login">
-                <a href="">tạo tài khoản</a>
-            </p>
-        </form>
-       </div>
+    <section class="map">
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.2612087312139!2d106.78490560794533!3d10.847813332349517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527131ae8b249%3A0x4d2d3c8fab7d3c2e!2zOTcgxJDGsOG7nW5nIE1hbiBUaGnhu4duLCBIaeG7h3AgUGjDuiwgUXXhuq1uIDksIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1617047387108!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
 
+    <section class="contact-address">
+        <div class="container">
+            <div class="section-box">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+
+                <div class="description">
+                    <h3>Số liên hệ</h3>
+
+                    <p>Toll-Free: 1800 - 1234 - 5678
+                        <br>Fax: 1800 - 1234 - 5678
+                    </p>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+
+                <div class="description">
+                    <h3>email</h3>
+
+                    <p>buddha@example.com
+                        <br>support@example.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+
+                <div class="description">
+                    <h3>địa chỉ</h3>
+
+                    <p>97 man thiện, hiệp phú
+                        <br>quận 9, TP HCM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <h3>liên hệ với nội dung</h3>
+
+            <form action="">
+                <input type="email" name="" id="" placeholder="email">
+    
+                <input type="text" placeholder="tiêu đề">
+    
+                <textarea name="" id="" cols="30" rows="10" placeholder="nội dung"></textarea>
+    
+                <button type="submit">gửi</button>
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="footer-top">
             <div class="container">
@@ -179,4 +228,5 @@
         <a href="#header"></a>
     </div>
 </body>
+
 </html>
