@@ -105,11 +105,10 @@ header {
                   &.dropdown-search {
                     visibility: visible;
                     opacity: 1;
-  
+                    z-index: 1;
+
                     animation: scroll 2s linear;
                     animation-fill-mode: forwards;
-  
-                    z-index: 1;
                   }
                 }
               }
@@ -130,7 +129,7 @@ header {
             .dropdown-search {
               position: absolute;
               top: 0;
-              left: 0;
+              //left: 0;
 
               visibility: hidden;
               opacity: 0;

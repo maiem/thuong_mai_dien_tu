@@ -187,11 +187,11 @@ header .container .icon-menu nav ul li a.active {
 header .container .icon-menu nav ul li a:focus .search.dropdown-search {
   visibility: visible;
   opacity: 1;
+  z-index: 1;
   -webkit-animation: scroll 2s linear;
           animation: scroll 2s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  z-index: 1;
 }
 
 header .container .icon-menu nav ul li a i {
@@ -211,7 +211,6 @@ header .container .icon-menu nav ul li a i:hover {
 header .container .icon-menu nav ul li .dropdown-search {
   position: absolute;
   top: 0;
-  left: 0;
   visibility: hidden;
   opacity: 0;
   z-index: -1;
