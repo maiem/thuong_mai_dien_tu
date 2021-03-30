@@ -190,9 +190,9 @@ button:focus, input:focus, textarea:focus {
 }
 
 .slider .slide-show .left a:hover {
-  background: #555555;
-  -webkit-transition: all .4s ease-in;
-  transition: all .4s ease-in;
+  background: #33858d;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .slider .slide-show .center h3 {
@@ -239,9 +239,9 @@ button:focus, input:focus, textarea:focus {
 }
 
 .slider .slide-show .center a:hover {
-  background: #555555;
-  -webkit-transition: all .4s ease-in;
-  transition: all .4s ease-in;
+  background: #33858d;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 @-webkit-keyframes translate-right-h3 {
@@ -375,9 +375,9 @@ button:focus, input:focus, textarea:focus {
 }
 
 .slider .slide-show .right a:hover {
-  background: #555555;
-  -webkit-transition: all .4s ease-in;
-  transition: all .4s ease-in;
+  background: #33858d;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .slider .slide-show .owl-nav .owl-prev,
@@ -748,5 +748,11 @@ button:focus, input:focus, textarea:focus {
   right: 50%;
   -webkit-transform: translate(50%, -50%) rotate(45deg);
           transform: translate(50%, -50%) rotate(45deg);
+}
+
+.back-to-top a:hover {
+  background: #33858d;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 /*# sourceMappingURL=home.css.map */

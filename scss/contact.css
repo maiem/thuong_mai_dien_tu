@@ -238,6 +238,12 @@ button:focus, input:focus, textarea:focus {
   right: 20px;
 }
 
+.back-to-top a:hover {
+  background: #33858d;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
 .back-to-top a::before {
   content: "";
   width: 10px;

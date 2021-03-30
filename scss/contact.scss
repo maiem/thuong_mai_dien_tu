@@ -125,6 +125,11 @@
     bottom: 20px;
     right: 20px;
 
+    &:hover {
+      background: #33858d;
+      transition: all 0.2s ease-in;
+    }
+    
     &::before {
       content: "";
       width: 10px;

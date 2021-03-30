@@ -148,10 +148,9 @@
     animation: translate-right-a 1s linear;
     animation-fill-mode: forwards;
 
-    
-    &:hover{
-      background: $secondaryColor;
-      transition: all .4s ease-in;
+    &:hover {
+      background: #33858d;
+      transition: all 0.2s ease-in;
     }
   }
 }
@@ -247,9 +246,9 @@
     animation: translate-a 1s linear;
     animation-fill-mode: forwards;
 
-    &:hover{
-      background: $secondaryColor;
-      transition: all .4s ease-in;
+    &:hover {
+      background: #33858d;
+      transition: all 0.2s ease-in;
     }
   }
 }

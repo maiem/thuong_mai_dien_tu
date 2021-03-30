@@ -138,60 +138,10 @@ header .container .icon-menu nav ul li a.active {
   color: #57b1ba;
 }
 
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  25% {
-    -webkit-transform: translateY(22.5px);
-            transform: translateY(22.5px);
-  }
-  50% {
-    -webkit-transform: translateY(45px);
-            transform: translateY(45px);
-  }
-  75% {
-    -webkit-transform: translateY(67.5px);
-            transform: translateY(67.5px);
-  }
-  100% {
-    -webkit-transform: translateY(90px);
-            transform: translateY(90px);
-  }
-}
-
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  25% {
-    -webkit-transform: translateY(22.5px);
-            transform: translateY(22.5px);
-  }
-  50% {
-    -webkit-transform: translateY(45px);
-            transform: translateY(45px);
-  }
-  75% {
-    -webkit-transform: translateY(67.5px);
-            transform: translateY(67.5px);
-  }
-  100% {
-    -webkit-transform: translateY(90px);
-            transform: translateY(90px);
-  }
-}
-
-header .container .icon-menu nav ul li a:focus .search.dropdown-search {
-  visibility: visible;
-  opacity: 1;
-  z-index: 1;
-  -webkit-animation: scroll 2s linear;
-          animation: scroll 2s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+header .container .icon-menu nav ul li a:hover i {
+  color: #57b1ba;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 header .container .icon-menu nav ul li a i {
@@ -202,48 +152,66 @@ header .container .icon-menu nav ul li a i {
   transition: all 0.2s ease-in;
 }
 
-header .container .icon-menu nav ul li a i:hover {
-  color: #57b1ba;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-header .container .icon-menu nav ul li .dropdown-search {
+header .container .icon-menu nav ul li .toggle-search {
   position: absolute;
-  top: 0;
-  visibility: hidden;
-  opacity: 0;
-  z-index: -1;
-}
-
-header .container .icon-menu nav ul li .dropdown-search input {
+  top: 60%;
+  left: 0;
+  z-index: 1;
   width: 100vw;
-  height: 90px;
+  height: 170px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .icon-menu nav ul li .toggle-search input {
+  width: 100%;
+  height: 50px;
   border-bottom: 1px solid #e7f2f0;
-  padding: 30px;
 }
 
-header .container .icon-menu nav ul li .dropdown-search input::-webkit-input-placeholder {
+header .container .icon-menu nav ul li .toggle-search input::-webkit-input-placeholder {
   text-transform: capitalize;
   color: #555555;
   font-size: 17px;
+  padding: 100px;
 }
 
-header .container .icon-menu nav ul li .dropdown-search input:-ms-input-placeholder {
+header .container .icon-menu nav ul li .toggle-search input:-ms-input-placeholder {
   text-transform: capitalize;
   color: #555555;
   font-size: 17px;
+  padding: 100px;
 }
 
-header .container .icon-menu nav ul li .dropdown-search input::-ms-input-placeholder {
+header .container .icon-menu nav ul li .toggle-search input::-ms-input-placeholder {
   text-transform: capitalize;
   color: #555555;
   font-size: 17px;
+  padding: 100px;
 }
 
-header .container .icon-menu nav ul li .dropdown-search input::placeholder {
+header .container .icon-menu nav ul li .toggle-search input::placeholder {
   text-transform: capitalize;
   color: #555555;
   font-size: 17px;
+  padding: 100px;
+}
+
+header .container .icon-menu nav ul li .toggle-search input:focus {
+  border-bottom: 1px solid #ccc;
+}
+
+header .container .icon-menu nav ul li .toggle-search button {
+  background: white;
+  color: #57b1ba;
+  font-size: 17px;
+  text-transform: capitalize;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 90%;
 }
 /*# sourceMappingURL=header.css.map */

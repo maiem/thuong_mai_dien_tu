@@ -57,9 +57,9 @@
         text-transform: capitalize;
         transition: all .4s ease-in;
     
-        &:hover{
-          background: $secondaryColor;
-          transition: all .4s ease-in;
+        &:hover {
+          background: #33858d;
+          transition: all 0.2s ease-in;
         }
       }
     }
@@ -266,6 +266,11 @@
       top: 50%;
       right: 50%;
       transform: translate(50%, -50%) rotate(45deg);
+    }
+
+    &:hover {
+      background: #33858d;
+      transition: all 0.2s ease-in;
     }
   }
 }

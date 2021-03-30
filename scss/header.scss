@@ -64,12 +64,11 @@ header {
 
           li {
             text-align: center;
-            //position: relative;
-
             cursor: pointer;
 
             a {
               padding: 25px;
+
               &:last-child {
                 padding-right: 0;
               }
@@ -78,38 +77,10 @@ header {
                 color: $primaryColor;
               }
 
-              &:focus {
-                .search {
-                  @keyframes scroll {
-                    0% {
-                     transform: translateY(0);
-                    }
-  
-                    25% {
-                      transform: translateY(22.5px);
-                    }
-  
-                    50% {
-                      transform: translateY(45px);
-                    }
-  
-                    75% {
-                      transform: translateY(67.5px);
-                    }
-  
-                    100% {
-                      transform: translateY(90px);
-                    }
-                  }
-  
-                  &.dropdown-search {
-                    visibility: visible;
-                    opacity: 1;
-                    z-index: 1;
-
-                    animation: scroll 2s linear;
-                    animation-fill-mode: forwards;
-                  }
+              &:hover {
+                i{
+                  color: $primaryColor;
+                transition: all 0.2s ease-in;
                 }
               }
 
@@ -118,36 +89,52 @@ header {
                 font-weight: 500;
                 color: $secondaryColor;
                 transition: all 0.2s ease-in;
-
-                &:hover {
-                  color: $primaryColor;
-                  transition: all 0.2s ease-in;
-                }
               }
             }
 
-            .dropdown-search {
+            .toggle-search {
               position: absolute;
-              top: 0;
-              //left: 0;
+              top: 60%;
+              left: 0;
 
-              visibility: hidden;
-              opacity: 0;
-              z-index: -1;
+              z-index: 1;
+
+              // visibility: hidden;
+              // opacity: 0;
+
+              width: 100vw;
+              height: 170px;
+              box-shadow: 0 0 10px rgba(0,0,0,0.5);
+              display: flex;
 
               input {
-                width: 100vw;
-                height: 90px;
+                width: 100%;
+                height: 50px;
                 border-bottom: 1px solid rgb(231, 242, 240);
-                padding: 30px;
 
                 &::placeholder {
                   text-transform: capitalize;
                   color: $secondaryColor;
                   font-size: 17px;
+                  padding: 100px;
+                }
+
+                &:focus{
+                  border-bottom: 1px solid #ccc;
                 }
               }
-            }
+
+              button{
+                background: white;
+                color: $primaryColor;
+                font-size: 17px;
+                text-transform: capitalize;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left: 90%;
+              }
+             }
           }
         }
       }

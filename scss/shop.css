@@ -152,6 +152,12 @@ button:focus, input:focus, textarea:focus {
   transition: all 0.3s ease-in;
 }
 
+.list-products .container ul li .product-box .product-detail .add-to-cart a:hover {
+  background: #33858d;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
 .list-products .container .button-load {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,6 +197,12 @@ button:focus, input:focus, textarea:focus {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+.back-to-top a:hover {
+  background: #33858d;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .back-to-top a::before {

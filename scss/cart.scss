@@ -1,0 +1,191 @@
+@import "reset";
+@import "mixin";
+
+.shopping-cart {
+  .container {
+    .cart-table {
+      display: flex;
+      justify-content: space-between;
+
+      margin: 50px 0;
+      .cart-table-left {
+        width: 60%;
+
+        .cart-header {
+          padding: 10px 30px;
+          background: rgb(241, 241, 241);
+          position: relative;
+
+          &::before {
+            content: "";
+            width: 100%;
+            border: 1px solid $secondaryColor;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
+          h5 {
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: 600;
+          }
+        }
+
+        .cart-product-list {
+          .cart-product {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            position: relative;
+
+            &::before {
+              content: "";
+              width: 100%;
+              border: 1px solid #ccc;
+
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+
+            .cart-product-image {
+              margin: 30px 0 10px;
+              a {
+                img {
+                  max-width: 100%;
+                  width: 30%;
+                  border: 0.3px solid rgba(204, 204, 204, 0.205);
+                }
+              }
+            }
+
+            .product-detail {
+              .name {
+                a {
+                  color: $secondaryColor;
+                  font-size: 18px;
+
+                  &::first-letter {
+                    text-transform: capitalize;
+                  }
+                }
+              }
+
+              .price {
+                p {
+                  span {
+                    font-size: 12px;
+                    text-decoration: underline;
+                  }
+
+                  font-weight: 600;
+                  color: $primaryColor;
+                }
+              }
+            }
+          }
+        }
+
+        .btn-shopping-more {
+          margin-top: 40px;
+          a {
+            &::first-letter {
+              text-transform: capitalize;
+            }
+
+            &:hover {
+                background: #33858d;
+                transition: all 0.2s ease-in;
+              }
+              
+            color: white;
+            background: $primaryColor;
+            padding: 10px;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      .cart-table-right {
+        width: 33%;
+
+        .cart-header {
+          padding: 10px 30px;
+          background: rgb(241, 241, 241);
+          position: relative;
+
+          &::before {
+            content: "";
+            width: 100%;
+            border: 1px solid $secondaryColor;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
+          h5 {
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: 600;
+          }
+        }
+
+        .price-total {
+          margin-top: 50px;
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            color: $secondaryColor;
+            text-transform: capitalize;
+
+            span {
+              font-size: 12px;
+              font-weight: 600;
+              text-transform: lowercase;
+            }
+          }
+        }
+
+        .mess {
+          p {
+            color: $secondaryColor;
+            &::first-letter {
+              text-transform: capitalize;
+            }
+          }
+
+          textarea {
+            padding: 10px;
+            width: 100%;
+            height: 150px;
+            border: 1px solid $secondaryColor;
+          }
+        }
+
+        .btn-payment {
+          a {
+            width: 100%;
+            text-align: center;
+
+            &::first-letter {
+              text-transform: capitalize;
+            }
+            &:hover {
+                background: #33858d;
+                transition: all 0.2s ease-in;
+              }
+
+            color: white;
+            background: $primaryColor;
+            padding: 10px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}

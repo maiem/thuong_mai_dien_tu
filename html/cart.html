@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account - Medical</title>
+    <title>Giỏ hàng - Medical</title>
 
     <link rel="stylesheet" href="../scss/reset.css">
     <link rel="stylesheet" href="../scss/account.css">
     <link rel="stylesheet" href="../scss/header.css">
     <link rel="stylesheet" href="../scss/footer.css">
     <link rel="stylesheet" href="../scss/breadcrumb.css">
+    <link rel="stylesheet" href="../scss/shop.css">
+    <link rel="stylesheet" href="../scss/cart.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -63,7 +65,7 @@
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="cart.html">
                                 <i class="fas fa-cart-plus"></i>
                             </a>
                         </li>
@@ -81,37 +83,97 @@
 
     <section class="breadcrumb">
         <div class="container">
-            <h2>tài khoản</h2>
+            <h2>giỏ hàng của bạn</h2>
 
             <div class="small-breadcrumb">
                 <a href="../index.html">trang chủ</a>
                 <span>/</span>
-                <span>tài khoản</span>
+                <span>giỏ hàng</span>
             </div>
         </div>
     </section>
 
-    <section class="customers-login">
-       <div class="container">
-        <form action="">
-            <input type="email" placeholder="email">
+   <section class="shopping-cart">
+        <div class="container">
+            <div class="cart-table">
+                <div class="cart-table-left">
+                    <div class="cart-header">
+                        <h5>sản phẩm</h5>
+                    </div>
 
-            <input type="password" name="" id="" placeholder="mật khẩu">
+                    <div class="cart-product-list">
+                        <div class="cart-product">
+                            <div class="cart-product-image">
+                                <a href="">
+                                    <img src="../images/prod1.jpg" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="product-detail">
+                                <div class="name">
+                                    <a href="">khăn giấy ướt</a>
+                                </div>
+    
+                                <div class="price">
+                                    <p> <span>đ</span> 20000</p>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="cart-product">
+                            <div class="cart-product-image">
+                                <a href="">
+                                    <img src="../images/prod1.jpg" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="product-detail">
+                                <div class="name">
+                                    <a href="">khăn giấy ướt</a>
+                                </div>
+    
+                                <div class="price">
+                                    <p> <span>đ</span> 20000</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
 
-            <p>
-                <a href="">quên mật khẩu ?</a>
-            </p>
+                    <div class="btn-shopping-more">
+                        <a href="../html/shop.html">quay lại cửa hàng</a>
+                    </div>
 
-            <p>
-                <input type="submit" value="đăng nhập">
-            </p>
+                </div>
 
-            <p id="create-new-login">
-                <a href="">tạo tài khoản</a>
-            </p>
-        </form>
-       </div>
-    </section>
+                <div class="cart-table-right">
+                    <div class="cart-header">
+                        <h5>tổng</h5>
+                    </div>
+
+                    <div class="price-total">
+                        <p>tổng tiền:</p>
+
+                        <p>
+                            <span>đ</span>
+                            000.000
+                        </p>
+                    </div>
+
+                    <div class="mess">
+                        <p>ghi chú:</p>
+
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="btn-payment">
+                        <a href="">thanh toán</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
 
     <footer>
         <div class="footer-top">
