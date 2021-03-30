@@ -27,11 +27,11 @@ a {
   background: none;
 }
 
-button, input {
+button, input, textarea {
   border: none;
 }
 
-button:focus, input:focus {
+button:focus, input:focus, textarea:focus {
   border: none;
   outline: none;
   background: none;
@@ -123,20 +123,29 @@ button:focus, input:focus {
 
 .contact-form .container {
   text-align: center;
+  padding: 50px 0;
+  text-align: center;
 }
 
-.contact-form .container h3 {
-  margin-top: 15px;
+.contact-form .container h2 {
   color: #57b1ba;
   font-size: 30px;
+  padding-bottom: 15px;
 }
 
-.contact-form .container h3::first-letter {
+.contact-form .container h2::first-letter {
   text-transform: capitalize;
 }
 
+.contact-form .container p {
+  color: #808c8d;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .contact-form .container form {
-  margin: 30px;
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,6 +212,7 @@ button:focus, input:focus {
   font-size: 17px;
   text-transform: capitalize;
   border-radius: 4px;
+  margin-bottom: 0;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;

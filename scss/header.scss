@@ -1,7 +1,8 @@
-@import 'reset';
+@import "reset";
 
 header {
   background: white;
+  position: relative;
 
   .container {
     display: flex;
@@ -63,7 +64,7 @@ header {
 
           li {
             text-align: center;
-            position: relative;
+            //position: relative;
 
             cursor: pointer;
 
@@ -77,6 +78,42 @@ header {
                 color: $primaryColor;
               }
 
+              &:focus {
+                .search {
+                  @keyframes scroll {
+                    0% {
+                     transform: translateY(0);
+                    }
+  
+                    25% {
+                      transform: translateY(22.5px);
+                    }
+  
+                    50% {
+                      transform: translateY(45px);
+                    }
+  
+                    75% {
+                      transform: translateY(67.5px);
+                    }
+  
+                    100% {
+                      transform: translateY(90px);
+                    }
+                  }
+  
+                  &.dropdown-search {
+                    visibility: visible;
+                    opacity: 1;
+  
+                    animation: scroll 2s linear;
+                    animation-fill-mode: forwards;
+  
+                    z-index: 1;
+                  }
+                }
+              }
+
               i {
                 font-size: 18px;
                 font-weight: 500;
@@ -86,6 +123,29 @@ header {
                 &:hover {
                   color: $primaryColor;
                   transition: all 0.2s ease-in;
+                }
+              }
+            }
+
+            .dropdown-search {
+              position: absolute;
+              top: 0;
+              left: 0;
+
+              visibility: hidden;
+              opacity: 0;
+              z-index: -1;
+
+              input {
+                width: 100vw;
+                height: 90px;
+                border-bottom: 1px solid rgb(231, 242, 240);
+                padding: 30px;
+
+                &::placeholder {
+                  text-transform: capitalize;
+                  color: $secondaryColor;
+                  font-size: 17px;
                 }
               }
             }

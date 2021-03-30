@@ -27,11 +27,11 @@ a {
   background: none;
 }
 
-button, input {
+button, input, textarea {
   border: none;
 }
 
-button:focus, input:focus {
+button:focus, input:focus, textarea:focus {
   border: none;
   outline: none;
   background: none;
