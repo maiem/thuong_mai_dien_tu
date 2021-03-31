@@ -51,8 +51,8 @@
                 height: 15px;
               }
 
-              span{
-                &::first-letter{
+              span {
+                &::first-letter {
                   text-transform: capitalize;
                 }
 
@@ -88,52 +88,51 @@
     }
 
     .pay-right {
-     flex-basis: 50%;
-     padding-left: 50px;
+      flex-basis: 50%;
+      padding-left: 50px;
 
-     border-left: 1px solid rgba(204, 204, 204, 0.329);
+      border-left: 1px solid rgba(204, 204, 204, 0.329);
 
-     .pay-right-product-info{
+      .pay-right-product-info {
+      }
 
-     }
+      .pay-right-product-price {
+        width: 100%;
+        position: relative;
 
-     .pay-right-product-price{
-       width: 100%;
-      position: relative;
-      
-      border-bottom: 1px solid rgba(204, 204, 204, 0.329);
-      margin-bottom: 30px;
-      
-       p{
-         display: flex;
-         justify-content: space-between;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.329);
+        margin-bottom: 30px;
 
-         text-transform: capitalize;
-         font-size: 20px;
-         font-weight: 400;
-         color: $secondaryColor;
+        p {
+          display: flex;
+          justify-content: space-between;
 
-         span{
-           text-transform: lowercase;
-         }
-       }
-     }
+          text-transform: capitalize;
+          font-size: 20px;
+          font-weight: 400;
+          color: $secondaryColor;
 
-     .pay-right-product-total-price{
-      p{
-        display: flex;
-        justify-content: space-between;
-
-        text-transform: capitalize;
-        font-size: 20px;
-        font-weight: 400;
-        color: $secondaryColor;
-
-        span{
-          text-transform: lowercase;
+          span {
+            text-transform: lowercase;
+          }
         }
       }
-     }
+
+      .pay-right-product-total-price {
+        p {
+          display: flex;
+          justify-content: space-between;
+
+          text-transform: capitalize;
+          font-size: 20px;
+          font-weight: 400;
+          color: $secondaryColor;
+
+          span {
+            text-transform: lowercase;
+          }
+        }
+      }
     }
   }
 }
