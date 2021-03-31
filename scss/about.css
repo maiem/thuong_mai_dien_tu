@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.6;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+button, input, textarea {
+  border: none;
+}
+
+button:focus, input:focus, textarea:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+*::-moz-selection {
+  color: white;
+  background: pink;
+}
+
+*::selection {
+  color: white;
+  background: pink;
+}
+
+.about-blog1 {
+  height: 600px;
+  background-image: url("../images/img-about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.about-blog1 .blog1 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+}
+
+.about-blog1 .blog1 .blog1-header {
+  padding-bottom: 50px;
+}
+
+.about-blog1 .blog1 .blog1-header h2 {
+  color: #57b1ba;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.about-blog1 .blog1 .blog1-header h2::first-letter {
+  text-transform: capitalize;
+}
+
+.about-blog1 .blog1 .blog1-header p {
+  color: #555555;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.about-blog1 .blog1 .blog1-header p::first-letter {
+  text-transform: capitalize;
+}
+
+.about-blog1 .blog1 nav {
+  width: 600px;
+}
+
+.about-blog1 .blog1 nav ul li {
+  position: relative;
+  padding: 0 30px 30px;
+  text-align: start;
+  color: #808c8d;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.about-blog1 .blog1 nav ul li::before {
+  content: "";
+  width: 12px;
+  height: 7px;
+  border-top: 3px solid #555555;
+  border-right: 3px solid #555555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(3px) rotate(135deg);
+          transform: translateY(3px) rotate(135deg);
+}
+
+.about-blog2 {
+  background-image: url("../images/img-blog2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-blog2 .tittle-center {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-blog2 .tittle-center h2 {
+  color: #57b1ba;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.about-blog2 .tittle-center h2::first-letter {
+  text-transform: capitalize;
+}
+
+.about-blog2 .tittle-center p {
+  color: #808c8d;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-blog2 .about-blog2-detail .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-blog2 .about-blog2-detail .container .about-blog2-detail-left {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.about-blog2 .about-blog2-detail .container .about-blog2-detail-left h5 {
+  color: #57b1ba;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.about-blog2 .about-blog2-detail .container .about-blog2-detail-left h5::first-letter {
+  text-transform: capitalize;
+}
+
+.about-blog2 .about-blog2-detail .container .about-blog2-detail-left p {
+  color: #555555;
+  padding-bottom: 10px;
+}
+
+.about-blog2 .about-blog2-detail .container .about-blog2-detail-center {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.about-blog2 .about-blog2-detail .container .about-blog2-detail-center img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 70%;
+  height: 90%;
+}
+
+.about-blog2 .about-blog2-detail .container .about-blog2-detail-right {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.about-blog2 .about-blog2-detail .container .about-blog2-detail-right nav ul li {
+  position: relative;
+  color: #57b1ba;
+  font-size: 17px;
+  padding: 0 30px 10px;
+}
+
+.about-blog2 .about-blog2-detail .container .about-blog2-detail-right nav ul li::before {
+  content: "";
+  width: 12px;
+  height: 7px;
+  border-top: 2px solid #555555;
+  border-right: 2px solid #555555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-15px, 5px) rotate(135deg);
+          transform: translate(-15px, 5px) rotate(135deg);
+}
+
+.client .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client .container .client-img a {
+  padding: 30px;
+}
+
+.client .container .client-img a img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=about.css.map */
