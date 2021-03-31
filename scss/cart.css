@@ -98,7 +98,7 @@ button:focus, input:focus, textarea:focus {
 .shopping-cart .container .cart-table .cart-table-left .cart-product-list .cart-product::before {
   content: "";
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(204, 204, 204, 0.842);
   position: absolute;
   bottom: 0;
   left: 0;
