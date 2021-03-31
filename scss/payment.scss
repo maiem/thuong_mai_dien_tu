@@ -47,8 +47,8 @@
           .checkBox {
             label {
               #checkBox {
-                width: 20px;
-                height: 20px;
+                width: 15px;
+                height: 15px;
               }
 
               span{
@@ -58,7 +58,6 @@
 
                 color: $secondaryColor;
                 font-weight: 600;
-                font-size: 14px;
               }
             }
           }
@@ -100,9 +99,12 @@
 
      .pay-right-product-price{
        width: 100%;
-
+      position: relative;
+      
+      border-bottom: 1px solid rgba(204, 204, 204, 0.329);
+      margin-bottom: 30px;
+      
        p{
-        
          display: flex;
          justify-content: space-between;
 
@@ -115,6 +117,22 @@
            text-transform: lowercase;
          }
        }
+     }
+
+     .pay-right-product-total-price{
+      p{
+        display: flex;
+        justify-content: space-between;
+
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 400;
+        color: $secondaryColor;
+
+        span{
+          text-transform: lowercase;
+        }
+      }
      }
     }
   }

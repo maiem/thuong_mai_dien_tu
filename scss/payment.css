@@ -112,14 +112,13 @@ button:focus, input:focus, textarea:focus {
 }
 
 .pay .container .pay-left .pay-left-contact-info form .checkBox label #checkBox {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .pay .container .pay-left .pay-left-contact-info form .checkBox label span {
   color: #555555;
   font-weight: 600;
-  font-size: 14px;
 }
 
 .pay .container .pay-left .pay-left-contact-info form .checkBox label span::first-letter {
@@ -154,6 +153,9 @@ button:focus, input:focus, textarea:focus {
 
 .pay .container .pay-right .pay-right-product-price {
   width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.329);
+  margin-bottom: 30px;
 }
 
 .pay .container .pay-right .pay-right-product-price p {
@@ -170,6 +172,23 @@ button:focus, input:focus, textarea:focus {
 }
 
 .pay .container .pay-right .pay-right-product-price p span {
+  text-transform: lowercase;
+}
+
+.pay .container .pay-right .pay-right-product-total-price p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.pay .container .pay-right .pay-right-product-total-price p span {
   text-transform: lowercase;
 }
 /*# sourceMappingURL=payment.css.map */
