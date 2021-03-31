@@ -2,6 +2,7 @@
 @import "mixin";
 
 .slider {
+  z-index: -1;
   .slide-show {
     .child-slide {
       position: relative;

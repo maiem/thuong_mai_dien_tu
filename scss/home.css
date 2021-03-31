@@ -47,6 +47,10 @@ button:focus, input:focus, textarea:focus {
   background: pink;
 }
 
+.slider {
+  z-index: -1;
+}
+
 .slider .slide-show .child-slide {
   position: relative;
   text-align: center;
