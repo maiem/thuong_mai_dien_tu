@@ -63,27 +63,27 @@ button:focus, input:focus, textarea:focus {
           transform: translate(-20%, -50%);
 }
 
-.about-blog1 .blog1 .blog1-header {
+.about-blog1 .blog1 .blog-header {
   padding-bottom: 50px;
 }
 
-.about-blog1 .blog1 .blog1-header h2 {
+.about-blog1 .blog1 .blog-header h2 {
   color: #57b1ba;
   font-size: 30px;
   font-weight: 900;
 }
 
-.about-blog1 .blog1 .blog1-header h2::first-letter {
+.about-blog1 .blog1 .blog-header h2::first-letter {
   text-transform: capitalize;
 }
 
-.about-blog1 .blog1 .blog1-header p {
+.about-blog1 .blog1 .blog-header p {
   color: #555555;
   font-weight: 600;
   font-size: 18px;
 }
 
-.about-blog1 .blog1 .blog1-header p::first-letter {
+.about-blog1 .blog1 .blog-header p::first-letter {
   text-transform: capitalize;
 }
 
@@ -205,6 +205,92 @@ button:focus, input:focus, textarea:focus {
   left: 0;
   -webkit-transform: translate(-15px, 5px) rotate(135deg);
           transform: translate(-15px, 5px) rotate(135deg);
+}
+
+.about-blog3 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.about-blog3 .container .box {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background: gray;
+  position: relative;
+}
+
+.about-blog3 .container .box img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-blog3 .container .box .description {
+  text-align: center;
+  position: absolute;
+  padding: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.about-blog3 .container .box .description h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+
+.about-blog3 .container .box .description p {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.team .container {
+  text-align: center;
+}
+
+.team .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team .container ul li .section-box {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.team .container ul li .section-box img {
+  max-width: 100%;
+  border: none;
+}
+
+.team .container ul li .section-box .description h3 {
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #555555;
+}
+
+.team .container ul li .section-box .description h3::first-letter {
+  text-transform: capitalize;
+}
+
+.team .container ul li .section-box .description p {
+  color: #555555;
+  font-weight: 600;
 }
 
 .client .container {
