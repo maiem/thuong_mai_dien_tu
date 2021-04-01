@@ -53,14 +53,11 @@ footer {
             width: 400px;
             height: 40px;
             border-radius: 50px;
-  
-            &::placeholder {
-              text-align: center;
-            }
+            background: white;
+            text-align: center;
   
             &:focus {
               border: 1px solid $primaryColor;
-              background: white;
               color: $secondaryColor;
             }
           }

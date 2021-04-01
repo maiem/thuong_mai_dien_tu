@@ -12,7 +12,8 @@
   margin: 0 auto;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -27,11 +28,16 @@ a {
   background: none;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   border: none;
+  background: none;
 }
 
-button:focus, input:focus, textarea:focus {
+button:focus,
+input:focus,
+textarea:focus {
   border: none;
   outline: none;
   background: none;
@@ -103,27 +109,12 @@ footer .footer-top .container .footer-top-input-box input {
   width: 400px;
   height: 40px;
   border-radius: 50px;
-}
-
-footer .footer-top .container .footer-top-input-box input::-webkit-input-placeholder {
-  text-align: center;
-}
-
-footer .footer-top .container .footer-top-input-box input:-ms-input-placeholder {
-  text-align: center;
-}
-
-footer .footer-top .container .footer-top-input-box input::-ms-input-placeholder {
-  text-align: center;
-}
-
-footer .footer-top .container .footer-top-input-box input::placeholder {
+  background: white;
   text-align: center;
 }
 
 footer .footer-top .container .footer-top-input-box input:focus {
   border: 1px solid #57b1ba;
-  background: white;
   color: #555555;
 }
 

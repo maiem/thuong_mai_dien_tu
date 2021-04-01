@@ -12,7 +12,8 @@
   margin: 0 auto;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -27,12 +28,16 @@ a {
   background: none;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   border: none;
   background: none;
 }
 
-button:focus, input:focus, textarea:focus {
+button:focus,
+input:focus,
+textarea:focus {
   border: none;
   outline: none;
   background: none;
