@@ -29,6 +29,7 @@ a {
 
 button, input, textarea {
   border: none;
+  background: none;
 }
 
 button:focus, input:focus, textarea:focus {
@@ -79,8 +80,8 @@ button:focus, input:focus, textarea:focus {
 .contact-address .container .section-box .icon i {
   color: white;
   background: #555555;
-  padding: 10px;
-  font-size: 30px;
+  padding: 15px;
+  font-size: 20px;
   border-radius: 50%;
 }
 

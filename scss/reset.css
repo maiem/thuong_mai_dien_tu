@@ -29,6 +29,7 @@ a {
 
 button, input, textarea {
   border: none;
+  background: none;
 }
 
 button:focus, input:focus, textarea:focus {

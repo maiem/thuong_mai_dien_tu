@@ -29,6 +29,7 @@ a {
 
 button, input, textarea {
   border: none;
+  background: none;
 }
 
 button:focus, input:focus, textarea:focus {
@@ -49,7 +50,6 @@ button:focus, input:focus, textarea:focus {
 
 header {
   background: white;
-  position: relative;
 }
 
 header .container {
@@ -85,6 +85,10 @@ header .container .main-menu nav > ul {
           align-items: center;
 }
 
+header .container .main-menu nav > ul > li {
+  position: relative;
+}
+
 header .container .main-menu nav > ul > li a {
   padding: 20px;
   text-transform: capitalize;
@@ -97,7 +101,48 @@ header .container .main-menu nav > ul > li a:last-child {
   padding-right: 0;
 }
 
+header .container .main-menu nav > ul > li a:hover {
+  color: #57b1ba;
+}
+
 header .container .main-menu nav > ul > li a.active {
+  color: #57b1ba;
+}
+
+header .container .main-menu nav > ul > li:hover .dropdown-category {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+header .container .main-menu nav > ul > li .dropdown-category {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-20px, 42px);
+          transform: translate(-20px, 42px);
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-box-shadow: 0 0 1px 1px rgba(204, 204, 204, 0.4);
+          box-shadow: 0 0 1px 1px rgba(204, 204, 204, 0.4);
+}
+
+header .container .main-menu nav > ul > li .dropdown-category ul li {
+  width: 200px;
+  background: white;
+}
+
+header .container .main-menu nav > ul > li .dropdown-category ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555555;
+}
+
+header .container .main-menu nav > ul > li .dropdown-category ul li a:hover {
   color: #57b1ba;
 }
 
@@ -142,5 +187,66 @@ header .container .icon-menu nav ul li a i {
   color: #555555;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+}
+
+header .container .icon-menu nav ul li form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  padding: 30px;
+  background: white;
+  z-index: 2;
+  display: none;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+header .container .icon-menu nav ul li form input {
+  width: 500px;
+}
+
+header .container .icon-menu nav ul li form input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header .container .icon-menu nav ul li form input:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header .container .icon-menu nav ul li form input::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header .container .icon-menu nav ul li form input::placeholder {
+  text-transform: capitalize;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header .container .icon-menu nav ul li form button {
+  color: #555555;
+  font-size: 18px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+header .container .icon-menu nav ul li form #close {
+  padding-left: 50px;
+}
+
+header .container .icon-menu nav ul li form #close i {
+  color: #57b1ba;
 }
 /*# sourceMappingURL=header.css.map */

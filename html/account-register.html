@@ -44,6 +44,15 @@
 
                         <li>
                             <a href="category.html">danh mục</a>
+
+                            <div class="dropdown-category">
+                                <ul>
+                                    <li><a href="">vitamin</a></li>
+                                    <li><a href="">khẩu trang</a></li>
+                                    <li><a href="">dụng cụ bảo hộ</a></li>
+                                    <li><a href="">thiết bị</a></li>
+                                </ul>
+                            </div>
                         </li>
 
                         <li>
@@ -61,14 +70,20 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="">
-                                <i class="fas fa-search" onclick="open_searchBar()"></i>
+                            <a href="" id="btn-search">
+                                <i class="fas fa-search"></i>
                             </a>
 
-                            <!-- <div class="toggle-search" id="toggle">
-                                <input id="searchBar" type="text" placeholder="tìm kiếm...">
-                               <a href="javascript:void(0)" class="closebtn" onclick="close_seacrhBar()">&times;</a>
-                            </div> -->
+                            <form class="search-bar">
+                                <input type="text" placeholder="nhập tìm kiếm...">
+                                <button>
+                                    <i class="fas fa-search"></i>
+                                </button>
+
+                                <button id="close">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </form>
                         </li>
 
                         <li>
@@ -182,4 +197,5 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script src="../js/activeClass.js"></script>
+<script src="js/searchBar.js"></script>
 </html>
