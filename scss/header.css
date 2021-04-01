@@ -197,6 +197,9 @@ header .container .icon-menu nav ul li form {
   height: 30%;
   padding: 30px;
   background: white;
+  -webkit-box-shadow: 0 0 8px 4px rgba(204, 204, 204, 0.4);
+          box-shadow: 0 0 8px 4px rgba(204, 204, 204, 0.4);
+  position: fixed;
   z-index: 2;
   display: none;
   -webkit-transition: all .4s linear;
