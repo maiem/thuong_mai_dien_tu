@@ -39,20 +39,10 @@ header {
                 color: $primaryColor;
               }
 
-              &:hover {
-                color: $primaryColor;
-                transition: all 0.2s ease-in;
-              }
-
-              // &:focus{
-              //   color: $primaryColor;
-              // }
-
               text-transform: capitalize;
               font-size: 14px;
               font-weight: 500;
               color: $secondaryColor;
-              transition: all 0.2s ease-in;
             }
           }
         }

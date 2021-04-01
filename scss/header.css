@@ -91,8 +91,6 @@ header .container .main-menu nav > ul > li a {
   font-size: 14px;
   font-weight: 500;
   color: #555555;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
 }
 
 header .container .main-menu nav > ul > li a:last-child {
@@ -101,12 +99,6 @@ header .container .main-menu nav > ul > li a:last-child {
 
 header .container .main-menu nav > ul > li a.active {
   color: #57b1ba;
-}
-
-header .container .main-menu nav > ul > li a:hover {
-  color: #57b1ba;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
 }
 
 header .container .icon-menu nav ul {
