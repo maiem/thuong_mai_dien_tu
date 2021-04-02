@@ -177,6 +177,81 @@ textarea:focus {
   border-left: 1px solid rgba(204, 204, 204, 0.329);
 }
 
+.pay .container .pay-right .pay-right-product-info {
+  margin-bottom: 30px;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product::before {
+  content: "";
+  width: 100%;
+  border: 1px solid rgba(204, 204, 204, 0.842);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product .cart-product-image {
+  margin: 30px 0 10px;
+  width: 350px;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product .cart-product-image a img {
+  max-width: 100%;
+  width: 30%;
+  border: 0.3px solid rgba(204, 204, 204, 0.205);
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product form {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product form .minus {
+  padding-right: 20px;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product form input {
+  width: 30px;
+  font-size: 17px;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product .product-detail .name a {
+  color: #555555;
+  font-size: 18px;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product .product-detail .name a::first-letter {
+  text-transform: capitalize;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product .product-detail .price p {
+  font-weight: 600;
+  color: #57b1ba;
+}
+
+.pay .container .pay-right .pay-right-product-info .cart-product .product-detail .price p span {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
 .pay .container .pay-right .pay-right-product-price {
   width: 100%;
   position: relative;
