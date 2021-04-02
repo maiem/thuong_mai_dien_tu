@@ -74,16 +74,8 @@ textarea:focus {
 }
 
 .breadcrumb .container .small-breadcrumb a {
-  color: white;
-  text-transform: capitalize;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.breadcrumb .container .small-breadcrumb a:hover {
   color: #57b1ba;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  text-transform: capitalize;
 }
 
 .breadcrumb .container .small-breadcrumb span {

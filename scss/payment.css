@@ -149,22 +149,31 @@ textarea:focus {
   text-transform: capitalize;
 }
 
-.pay .container .pay-left .shipping-method .btn-shopping-more {
+.pay .container .pay-left .shipping-method .list-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay .container .pay-left .shipping-method .list-btn .btn {
   margin-top: 40px;
 }
 
-.pay .container .pay-left .shipping-method .btn-shopping-more a {
+.pay .container .pay-left .shipping-method .list-btn .btn a {
   color: white;
   background: #57b1ba;
   padding: 10px;
   border-radius: 4px;
 }
 
-.pay .container .pay-left .shipping-method .btn-shopping-more a::first-letter {
+.pay .container .pay-left .shipping-method .list-btn .btn a::first-letter {
   text-transform: capitalize;
 }
 
-.pay .container .pay-left .shipping-method .btn-shopping-more a:hover {
+.pay .container .pay-left .shipping-method .list-btn .btn a:hover {
   background: #33858d;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;

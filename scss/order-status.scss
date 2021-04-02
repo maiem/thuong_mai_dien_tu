@@ -1,6 +1,34 @@
 @import 'reset';
+@import 'mixin';
 
+.order-status{
+  margin-bottom: 50px;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    .tittle-content{
+      @include tittle-center;
+    } 
+
+    .content{
+      p{
+        font-size: 17px;
+        font-weight: 300;
+        color: $secondaryColor;
+
+        &::first-letter{
+          text-transform: capitalize;
+        }
+        span{
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
 
 
 

@@ -85,22 +85,27 @@
           text-transform: capitalize;
         }
 
-        .btn-shopping-more {
-          margin-top: 40px;
-          a {
-            &::first-letter {
-              text-transform: capitalize;
-            }
+        .list-btn{
+          display: flex;
+          justify-content: space-between;
 
-            &:hover {
-                background: #33858d;
-                transition: all 0.2s ease-in;
+          .btn{
+            margin-top: 40px;
+            a {
+              &::first-letter {
+                text-transform: capitalize;
               }
-              
-            color: white;
-            background: $primaryColor;
-            padding: 10px;
-            border-radius: 4px;
+  
+              &:hover {
+                  background: #33858d;
+                  transition: all 0.2s ease-in;
+                }
+                
+              color: white;
+              background: $primaryColor;
+              padding: 10px;
+              border-radius: 4px;
+            }
           }
         }
       }
@@ -114,6 +119,7 @@
 
       .pay-right-product-info {
         margin-bottom: 30px ;
+        
         .cart-product {
           display: flex;
           justify-content: space-between;

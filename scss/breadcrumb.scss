@@ -21,14 +21,8 @@
   
       .small-breadcrumb {
         a {
-          color: white;
+          color: $primaryColor;
           text-transform: capitalize;
-          transition: all 0.2s ease-in;
-  
-          &:hover {
-            color: $primaryColor;
-            transition: all 0.2s ease-in;
-          }
         }
   
         span {
