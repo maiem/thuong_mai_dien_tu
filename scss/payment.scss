@@ -84,6 +84,25 @@
 
           text-transform: capitalize;
         }
+
+        .btn-shopping-more {
+          margin-top: 40px;
+          a {
+            &::first-letter {
+              text-transform: capitalize;
+            }
+
+            &:hover {
+                background: #33858d;
+                transition: all 0.2s ease-in;
+              }
+              
+            color: white;
+            background: $primaryColor;
+            padding: 10px;
+            border-radius: 4px;
+          }
+        }
       }
     }
 

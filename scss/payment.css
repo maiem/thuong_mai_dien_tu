@@ -149,6 +149,27 @@ textarea:focus {
   text-transform: capitalize;
 }
 
+.pay .container .pay-left .shipping-method .btn-shopping-more {
+  margin-top: 40px;
+}
+
+.pay .container .pay-left .shipping-method .btn-shopping-more a {
+  color: white;
+  background: #57b1ba;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.pay .container .pay-left .shipping-method .btn-shopping-more a::first-letter {
+  text-transform: capitalize;
+}
+
+.pay .container .pay-left .shipping-method .btn-shopping-more a:hover {
+  background: #33858d;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
 .pay .container .pay-right {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
