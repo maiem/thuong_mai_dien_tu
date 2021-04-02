@@ -28,15 +28,20 @@ header {
 
           > li {
             position: relative;
+            margin-right: 15px;
+
+            &:last-child {
+              margin-right: 0;
+            }
 
             a {
-              padding: 20px;
+              padding: 15px;
 
               &:last-child {
                 padding-right: 0;
               }
 
-              &:hover{
+              &:hover {
                 color: $primaryColor;
               }
 
@@ -50,15 +55,15 @@ header {
               color: $secondaryColor;
             }
 
-            &:hover{
-              .dropdown-category{
+            &:hover {
+              .dropdown-category {
                 visibility: visible;
                 opacity: 1;
-                transition: all .4s linear;
+                transition: all 0.4s linear;
               }
             }
 
-            .dropdown-category{
+            .dropdown-category {
               visibility: hidden;
               opacity: 0;
               z-index: 2;
@@ -66,24 +71,24 @@ header {
               position: absolute;
               top: 50%;
               left: 0;
-              transform: translate(-20px,42px);
-              transition: all .4s linear;
+              transform: translate(-20px, 42px);
+              transition: all 0.4s linear;
 
               box-shadow: 0 0 1px 1px rgba($color: #ccc, $alpha: 0.4);
 
-              ul{
-                li{
+              ul {
+                li {
                   width: 200px;
                   background: white;
 
-                  a{
-                      font-size: 14px;
-                      font-weight: 600;
-                      color: $secondaryColor;
+                  a {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $secondaryColor;
 
-                      &:hover{
-                        color: $primaryColor;
-                      }
+                    &:hover {
+                      color: $primaryColor;
+                    }
                   }
                 }
               }
@@ -101,12 +106,16 @@ header {
           align-items: center;
 
           li {
+            margin-right: 10px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
             text-align: center;
             cursor: pointer;
 
             a {
-              padding: 25px;
-
               &:last-child {
                 padding-right: 0;
               }
@@ -124,13 +133,14 @@ header {
 
               i {
                 font-size: 18px;
-                font-weight: 500;
+                padding: 20px;
+                font-weight: 400;
                 color: $secondaryColor;
                 transition: all 0.2s ease-in;
               }
             }
 
-            form{
+            form {
               position: absolute;
               top: 0;
               left: 0;
@@ -145,29 +155,30 @@ header {
 
               z-index: 2;
               display: none;
-              transition: all .4s linear;
+              transition: all 0.4s linear;
 
               input {
                 width: 500px;
 
                 &::placeholder {
-                  text-transform: capitalize;
                   color: $secondaryColor;
-                  font-size: 14px;
-                  font-weight: 600;
+                  font-size: 20px;
+                  font-weight: 200;
+                  letter-spacing: 3px;
                 }
               }
 
               button {
-                color: $secondaryColor;
-                font-size: 18px;
-                font-weight: 200;
-                text-transform: capitalize;
+                i {
+                  font-size: 18px;
+                  font-weight: 200;
+                  color: $secondaryColor;
+                }
               }
 
-              #close{
+              #close {
                 padding-left: 50px;
-                i{
+                i {
                   color: $primaryColor;
                 }
               }

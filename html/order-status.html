@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tài khoản - Medical</title>
+    <title>Trạng thái đơn hàng - Medical</title>
 
     <link rel="stylesheet" href="../scss/reset.css">
-    <link rel="stylesheet" href="../scss/account.css">
+    <link rel="stylesheet" href="../scss/order-status.css">
     <link rel="stylesheet" href="../scss/header.css">
     <link rel="stylesheet" href="../scss/footer.css">
-    <link rel="stylesheet" href="../scss/breadcrumb.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -22,6 +22,7 @@
     <link rel="shortcut icon"
         href="//cdn.shopify.com/s/files/1/0396/3509/1612/t/3/assets/favicon.png?v=8890247597553443810" type="image/png">
 </head>
+
 <body>
     <header id="header">
         <div class="container">
@@ -35,7 +36,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="../index.html">trang chủ</a>
+                            <a href="../index.html" class="active">trang chủ</a>
                         </li>
 
                         <li>
@@ -43,7 +44,7 @@
                         </li>
 
                         <li>
-                            <a href="category.html">danh mục</a>
+                            <a href="category.html" class="category">danh mục</a>
 
                             <div class="dropdown-category">
                                 <ul>
@@ -100,40 +101,12 @@
         </div>
     </header>
 
-    <section class="breadcrumb">
+    <section class="order-status">
         <div class="container">
-            <h2>đăng nhập</h2>
-
-            <div class="small-breadcrumb">
-                <a href="../index.html">trang chủ</a>
-                <span>/</span>
-                <span>tài khoản</span>
-            </div>
+            
         </div>
     </section>
-
-    <section class="customers-login">
-       <div class="container">
-        <form action="">
-            <input type="email" placeholder="email">
-
-            <input type="password" name="" id="" placeholder="mật khẩu">
-
-            <p>
-                <a href="">quên mật khẩu ?</a>
-            </p>
-
-            <p>
-                <input type="submit" value="đăng nhập">
-            </p>
-
-            <p id="create-new-login">
-                <a href="account-register.html">tạo tài khoản</a>
-            </p>
-        </form>
-       </div>
-    </section>
-
+  
     <footer>
         <div class="footer-top">
             <div class="container">
@@ -202,7 +175,6 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
 <script src="../js/activeClass.js"></script>
 <script src="../js/searchBar.js"></script>
 

@@ -12,7 +12,8 @@
   margin: 0 auto;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -27,11 +28,16 @@ a {
   background: none;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   border: none;
+  background: none;
 }
 
-button:focus, input:focus, textarea:focus {
+button:focus,
+input:focus,
+textarea:focus {
   border: none;
   outline: none;
   background: none;
@@ -39,12 +45,12 @@ button:focus, input:focus, textarea:focus {
 
 *::-moz-selection {
   color: white;
-  background: pink;
+  background: #006eff;
 }
 
 *::selection {
   color: white;
-  background: pink;
+  background: #006eff;
 }
 
 .pay .container {
@@ -112,18 +118,16 @@ button:focus, input:focus, textarea:focus {
   border: 1px solid #3ed4e257;
 }
 
-.pay .container .pay-left .pay-left-contact-info form .checkBox label #checkBox {
+.pay .container .pay-left .pay-left-contact-info form .checkBox label input {
   width: 15px;
   height: 15px;
 }
 
 .pay .container .pay-left .pay-left-contact-info form .checkBox label span {
-  color: #555555;
-  font-weight: 600;
-}
-
-.pay .container .pay-left .pay-left-contact-info form .checkBox label span::first-letter {
+  margin-left: 20px;
   text-transform: capitalize;
+  color: #555555;
+  font-weight: 300;
 }
 
 .pay .container .pay-left .shipping-method h5 {

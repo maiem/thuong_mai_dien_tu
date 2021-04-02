@@ -1,0 +1,39 @@
+@import 'reset';
+
+
+
+
+
+
+
+
+
+
+
+.back-to-top {
+    position: relative;
+  
+    a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $primaryColor;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+  
+      &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+  
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+  
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) rotate(45deg);
+      }
+    }
+  }

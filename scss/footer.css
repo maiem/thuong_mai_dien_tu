@@ -45,12 +45,12 @@ textarea:focus {
 
 *::-moz-selection {
   color: white;
-  background: pink;
+  background: #006eff;
 }
 
 *::selection {
   color: white;
-  background: pink;
+  background: #006eff;
 }
 
 footer .footer-top {
@@ -92,8 +92,8 @@ footer .footer-top .container .footer-top-description p {
   color: #555555;
 }
 
-footer .footer-top .container .footer-top-input-box {
-  padding-top: 30px;
+footer .footer-top .container form {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,36 +105,76 @@ footer .footer-top .container .footer-top-input-box {
           align-items: center;
 }
 
-footer .footer-top .container .footer-top-input-box input {
-  width: 400px;
-  height: 40px;
+footer .footer-top .container form .input-email {
+  width: 500px;
+  position: relative;
   border-radius: 50px;
   background: white;
-  text-align: center;
+  border: none;
 }
 
-footer .footer-top .container .footer-top-input-box input:focus {
-  border: 1px solid #57b1ba;
-  color: #555555;
+footer .footer-top .container form .input-email input {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  padding: 15px;
 }
 
-footer .footer-top .container .footer-top-input-box button {
-  cursor: pointer;
-  width: 50px;
+footer .footer-top .container form .input-email input:focus {
+  border: 2px solid #57b1ba;
+  border-radius: 50px;
+}
+
+footer .footer-top .container form .input-email input::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+footer .footer-top .container form .input-email input:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+footer .footer-top .container form .input-email input::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+footer .footer-top .container form .input-email input::placeholder {
+  text-transform: capitalize;
+}
+
+footer .footer-top .container form .input-email button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 40px;
   height: 40px;
-  padding-right: 10px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  background: #57b1ba;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  text-transform: uppercase;
-  font-size: 14px;
-  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #555555;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-footer .footer-top .container .footer-top-input-box button:hover {
-  background: #555555;
+footer .footer-top .container form .input-email button i {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+footer .footer-top .container form .input-email button:hover {
+  background: #57b1ba;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 footer .footer-top .container .footer-top-contact-us {

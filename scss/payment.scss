@@ -48,18 +48,16 @@
 
           .checkBox {
             label {
-              #checkBox {
+              input {
                 width: 15px;
                 height: 15px;
               }
 
               span {
-                &::first-letter {
-                  text-transform: capitalize;
-                }
-
+                margin-left: 20px;
+                text-transform: capitalize;
                 color: $secondaryColor;
-                font-weight: 600;
+                font-weight: 300;
               }
             }
           }

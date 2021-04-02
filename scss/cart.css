@@ -12,7 +12,8 @@
   margin: 0 auto;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -27,11 +28,16 @@ a {
   background: none;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   border: none;
+  background: none;
 }
 
-button:focus, input:focus, textarea:focus {
+button:focus,
+input:focus,
+textarea:focus {
   border: none;
   outline: none;
   background: none;
@@ -39,12 +45,12 @@ button:focus, input:focus, textarea:focus {
 
 *::-moz-selection {
   color: white;
-  background: pink;
+  background: #006eff;
 }
 
 *::selection {
   color: white;
-  background: pink;
+  background: #006eff;
 }
 
 .shopping-cart .container .cart-table {
@@ -86,9 +92,9 @@ button:focus, input:focus, textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,12 +112,32 @@ button:focus, input:focus, textarea:focus {
 
 .shopping-cart .container .cart-table .cart-table-left .cart-product-list .cart-product .cart-product-image {
   margin: 30px 0 10px;
+  width: 350px;
 }
 
 .shopping-cart .container .cart-table .cart-table-left .cart-product-list .cart-product .cart-product-image a img {
   max-width: 100%;
   width: 30%;
   border: 0.3px solid rgba(204, 204, 204, 0.205);
+}
+
+.shopping-cart .container .cart-table .cart-table-left .cart-product-list .cart-product form {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shopping-cart .container .cart-table .cart-table-left .cart-product-list .cart-product form .minus {
+  padding-right: 20px;
+}
+
+.shopping-cart .container .cart-table .cart-table-left .cart-product-list .cart-product form input {
+  width: 30px;
+  font-size: 17px;
 }
 
 .shopping-cart .container .cart-table .cart-table-left .cart-product-list .cart-product .product-detail .name a {
@@ -131,6 +157,12 @@ button:focus, input:focus, textarea:focus {
 .shopping-cart .container .cart-table .cart-table-left .cart-product-list .cart-product .product-detail .price p span {
   font-size: 12px;
   text-decoration: underline;
+}
+
+.shopping-cart .container .cart-table .cart-table-left .cart-product-list .cart-product button i {
+  font-size: 20px;
+  font-weight: 300;
+  color: #57b1ba;
 }
 
 .shopping-cart .container .cart-table .cart-table-left .btn-shopping-more {
