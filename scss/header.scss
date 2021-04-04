@@ -35,10 +35,10 @@ header {
             }
 
             a {
-              padding: 15px;
+              margin-right: 10px;
 
               &:last-child {
-                padding-right: 0;
+                margin-right: 0;
               }
 
               &:hover {
@@ -71,10 +71,10 @@ header {
               position: absolute;
               top: 50%;
               left: 0;
-              transform: translate(-20px, 42px);
+              transform: translate(-50px,42px);
               transition: all 0.4s linear;
 
-              box-shadow: 0 0 1px 1px rgba($color: #ccc, $alpha: 0.4);
+              box-shadow: 0 0 2px 1px rgba($color: #ccc, $alpha: 0.4);
 
               ul {
                 li {
@@ -82,6 +82,7 @@ header {
                   background: white;
 
                   a {
+                    padding: 5px 50px;
                     font-size: 14px;
                     font-weight: 600;
                     color: $secondaryColor;

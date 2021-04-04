@@ -182,4 +182,26 @@ textarea:focus {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+
+.return-policy .container {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.return-policy .container h2 {
+  color: #57b1ba;
+  text-transform: capitalize;
+}
+
+.return-policy .container .description p {
+  color: #555555;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.return-policy .container .description p strong {
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=product-details.css.map */

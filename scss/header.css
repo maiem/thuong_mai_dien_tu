@@ -100,7 +100,7 @@ header .container .main-menu nav > ul > li:last-child {
 }
 
 header .container .main-menu nav > ul > li a {
-  padding: 15px;
+  margin-right: 10px;
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 500;
@@ -108,7 +108,7 @@ header .container .main-menu nav > ul > li a {
 }
 
 header .container .main-menu nav > ul > li a:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 header .container .main-menu nav > ul > li a:hover {
@@ -133,12 +133,12 @@ header .container .main-menu nav > ul > li .dropdown-category {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translate(-20px, 42px);
-          transform: translate(-20px, 42px);
+  -webkit-transform: translate(-50px, 42px);
+          transform: translate(-50px, 42px);
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  -webkit-box-shadow: 0 0 1px 1px rgba(204, 204, 204, 0.4);
-          box-shadow: 0 0 1px 1px rgba(204, 204, 204, 0.4);
+  -webkit-box-shadow: 0 0 2px 1px rgba(204, 204, 204, 0.4);
+          box-shadow: 0 0 2px 1px rgba(204, 204, 204, 0.4);
 }
 
 header .container .main-menu nav > ul > li .dropdown-category ul li {
@@ -147,6 +147,7 @@ header .container .main-menu nav > ul > li .dropdown-category ul li {
 }
 
 header .container .main-menu nav > ul > li .dropdown-category ul li a {
+  padding: 5px 50px;
   font-size: 14px;
   font-weight: 600;
   color: #555555;

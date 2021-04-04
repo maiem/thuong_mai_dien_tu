@@ -117,3 +117,29 @@
     }
   }
 }
+
+.return-policy{
+  .container{
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+
+    h2{
+      color: $primaryColor;
+      text-transform: capitalize;
+    }
+
+    .description{
+      p{
+        color: $secondaryColor;
+        margin-bottom: 20px;
+        font-weight: 600;
+
+        strong{
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
