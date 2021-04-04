@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.6;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  background: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+*::-moz-selection {
+  color: white;
+  background: #006eff;
+}
+
+*::selection {
+  color: white;
+  background: #006eff;
+}
+
+.product-details .container .cart-product {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.product-details .container .cart-product .product-image {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.product-details .container .cart-product .product-image a img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.product-details .container .cart-product .product-detail {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.product-details .container .cart-product .product-detail .name {
+  margin-bottom: 20px;
+}
+
+.product-details .container .cart-product .product-detail .name h3 {
+  color: #57b1ba;
+  font-size: 30px;
+}
+
+.product-details .container .cart-product .product-detail .name h3::first-letter {
+  text-transform: capitalize;
+}
+
+.product-details .container .cart-product .product-detail .name .description p {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  font-weight: 600;
+  color: #555555;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.product-details .container .cart-product .product-detail .name .description p::first-letter {
+  text-transform: capitalize;
+}
+
+.product-details .container .cart-product .product-detail .price {
+  margin-bottom: 20px;
+}
+
+.product-details .container .cart-product .product-detail .price p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.product-details .container .cart-product .product-detail .price p label {
+  width: 30%;
+  font-weight: 600;
+  color: #555555;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.product-details .container .cart-product .product-detail .price p label::first-letter {
+  text-transform: capitalize;
+}
+
+.product-details .container .cart-product .product-detail .price p span {
+  font-size: 17px;
+  color: #555555;
+}
+
+.product-details .container .cart-product .product-detail .price p span strong {
+  text-decoration: underline;
+}
+
+.product-details .container .cart-product .product-detail form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-details .container .cart-product .product-detail form label .minus {
+  padding-right: 20px;
+}
+
+.product-details .container .cart-product .product-detail form label input {
+  width: 30px;
+  font-size: 18px;
+}
+
+.product-details .container .cart-product .product-detail form a {
+  color: white;
+  background: #57b1ba;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.product-details .container .cart-product .product-detail form a::first-letter {
+  text-transform: capitalize;
+}
+
+.product-details .container .cart-product .product-detail form a:hover {
+  background: #33858d;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/*# sourceMappingURL=product-details.css.map */

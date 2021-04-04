@@ -1,0 +1,117 @@
+@import "reset";
+
+.product-details {
+  .container {
+    .cart-product {
+      margin: 50px 0;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      .product-image {
+          flex-basis: 50%;
+        a {
+          img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .product-detail {
+        flex-basis: 50%;
+        .name {
+          margin-bottom: 20px;
+          h3 {
+            color: $primaryColor;
+            font-size: 30px;
+
+            &::first-letter {
+              text-transform: capitalize;
+            }
+          }
+
+          .description {
+            p {
+              flex-basis: 20%;
+              font-weight: 600;
+              color: $secondaryColor;
+              font-size: 17px;
+
+              &::first-letter {
+                text-transform: capitalize;
+              }
+
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        .price {
+          margin-bottom: 20px;
+          p {
+            display: flex;
+            justify-content: end;
+            label {
+              width: 30%;
+              font-weight: 600;
+              color: $secondaryColor;
+              font-size: 17px;
+
+              &::first-letter {
+                text-transform: capitalize;
+              }
+
+              text-transform: capitalize;
+            }
+
+            span {
+              font-size: 17px;
+              color: $secondaryColor;
+
+              strong {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        form {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+
+          label {
+            .minus {
+              padding-right: 20px;
+            }
+
+            input {
+              width: 30px;
+              font-size: 18px;
+            }
+          }
+
+          a {
+            &::first-letter {
+              text-transform: capitalize;
+            }
+
+            &:hover {
+              background: #33858d;
+              transition: all 0.2s ease-in;
+            }
+
+            color: white;
+            background: $primaryColor;
+            padding: 10px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
