@@ -116,6 +116,17 @@ textarea:focus {
   max-width: 100%;
   width: 100%;
   height: 100%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.list-products .container ul li .product-box .product-image a img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  width: 100%;
+  height: 100%;
 }
 
 .list-products .container ul li .product-box .product-detail {
