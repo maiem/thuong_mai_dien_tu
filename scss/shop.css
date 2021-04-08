@@ -112,8 +112,8 @@ textarea:focus {
   height: 100%;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .list-products .container ul#myList li .product-box .product-image a img:hover {
@@ -185,11 +185,6 @@ textarea:focus {
 }
 
 .list-products .container .btn-loadMore-product ul li {
-  width: 30px;
-  height: 30px;
-  color: #555555;
-  font-size: 17px;
-  cursor: pointer;
   margin-right: 10px;
   border: 1px solid black;
 }
@@ -199,7 +194,14 @@ textarea:focus {
   border: none;
 }
 
-.list-products .container .btn-loadMore-product ul li.active {
+.list-products .container .btn-loadMore-product ul li a {
+  width: 30px;
+  height: 30px;
+  color: #555555;
+  font-size: 17px;
+}
+
+.list-products .container .btn-loadMore-product ul li a.active {
   background: #000;
   color: white;
 }
