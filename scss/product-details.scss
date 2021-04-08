@@ -118,10 +118,38 @@
   }
 }
 
+.comment{
+  .container{
+    margin-bottom: 50px;
+
+    h2{
+      color: $primaryColor;
+      text-transform: capitalize;
+    }
+
+    form{
+      textarea{
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 20px;
+        text-align: start;
+
+        &::placeholder{
+          text-transform: capitalize;
+          font-size: 14px;
+          font-weight: 500;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}
+
 .return-policy{
   .container{
     border: 1px solid #ccc;
-    text-align: center;
+    //text-align: center;
     padding: 20px;
     margin-bottom: 50px;
 

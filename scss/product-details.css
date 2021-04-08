@@ -183,9 +183,53 @@ textarea:focus {
   transition: all 0.2s ease-in;
 }
 
+.comment .container {
+  margin-bottom: 50px;
+}
+
+.comment .container h2 {
+  color: #57b1ba;
+  text-transform: capitalize;
+}
+
+.comment .container form textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: start;
+}
+
+.comment .container form textarea::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+}
+
+.comment .container form textarea:-ms-input-placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+}
+
+.comment .container form textarea::-ms-input-placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+}
+
+.comment .container form textarea::placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+}
+
 .return-policy .container {
   border: 1px solid #ccc;
-  text-align: center;
   padding: 20px;
   margin-bottom: 50px;
 }

@@ -5,21 +5,14 @@
 
   .container {
     text-align: center;
+    position: relative;
 
-    ul {
+    ul#myList {
       display: flex;
       flex-wrap: wrap;
-
-      &::after {
-        clear: both;
-        display: block;
-        content: "";
-      }
+      margin-bottom: 50px;
 
       li {
-        display: none;
-
-        overflow: hidden;
         flex-basis: 24%;
         text-align: center;
         margin-right: 14.667px;
@@ -122,25 +115,33 @@
       }
     }
 
-    .button-load {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .btn-loadMore-product{
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     transform: translate(-50%, 50%);
 
-      .show-more {
-        display: block;
+      ul{
+        padding-top: 50px;
+        display: flex;
+        
+        li{
+          width: 30px;
+          height: 30px;
+          color: $secondaryColor;
+          font-size: 17px;
+          cursor: pointer;
+          margin-right: 10px;
+          border: 1px solid black;
 
-        margin-right: 20px;
+          &:last-child{
+            margin-right: 0;
+            border: none;
+          }
 
-        &:last-child{
-          margin-right: 0;
-        }
-
-        a {
-          i {
-            font-size: 30px;
-            font-weight: 200;
-            color: $primaryColor;
+          &.active{
+            background: #000;
+            color: white;
           }
         }
       }

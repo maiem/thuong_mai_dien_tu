@@ -89,7 +89,7 @@ footer .footer-top .container .footer-top-description p {
   margin: 20px auto 0;
   font-size: 14px;
   font-weight: 500;
-  color: #555555;
+  color: rgba(255, 255, 255, 0.883);
 }
 
 footer .footer-top .container form {
