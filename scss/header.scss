@@ -56,14 +56,14 @@ header {
             }
 
             &:hover {
-              .dropdown-category {
+              .dropdown-category{
                 visibility: visible;
                 opacity: 1;
                 transition: all 0.4s linear;
               }
             }
 
-            .dropdown-category {
+            .dropdown-category{
               visibility: hidden;
               opacity: 0;
               z-index: 2;
@@ -101,12 +101,12 @@ header {
 
     .icon-menu {
       nav {
-        ul {
+        >ul {
           display: flex;
           justify-content: space-between;
           align-items: center;
 
-          li {
+          >li {
             margin-right: 10px;
 
             &:last-child {
@@ -115,6 +115,8 @@ header {
 
             text-align: center;
             cursor: pointer;
+
+            position: relative;
 
             a {
               &:last-child {
@@ -181,6 +183,48 @@ header {
                 padding-left: 50px;
                 i {
                   color: $primaryColor;
+                }
+              }
+            }
+
+            &:hover {
+              .dropdown-user{
+                visibility: visible;
+                opacity: 1;
+                transition: all 0.4s linear;
+              }
+            }
+
+            .dropdown-user {
+              visibility: hidden;
+              opacity: 0;
+              z-index: 2;
+
+              position: absolute;
+              top:50%;
+              right: 0;
+              transform: translate(60px,42px);
+              transition: all 0.4s linear;
+
+              box-shadow: 0 0 2px 1px rgba($color: #ccc, $alpha: 0.4);
+
+              ul {
+                li {
+                  width: 180px;
+                  height: 50px;
+                  background: white;
+
+                  a {
+                    padding: 5px 50px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: $secondaryColor;
+
+                    &:hover {
+                      color: $primaryColor;
+                    }
+                  }
                 }
               }
             }

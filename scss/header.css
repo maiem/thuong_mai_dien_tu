@@ -157,7 +157,7 @@ header .container .main-menu nav > ul > li .dropdown-category ul li a:hover {
   color: #57b1ba;
 }
 
-header .container .icon-menu nav ul {
+header .container .icon-menu nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,31 +169,32 @@ header .container .icon-menu nav ul {
           align-items: center;
 }
 
-header .container .icon-menu nav ul li {
+header .container .icon-menu nav > ul > li {
   margin-right: 10px;
   text-align: center;
   cursor: pointer;
+  position: relative;
 }
 
-header .container .icon-menu nav ul li:last-child {
+header .container .icon-menu nav > ul > li:last-child {
   margin-right: 0;
 }
 
-header .container .icon-menu nav ul li a:last-child {
+header .container .icon-menu nav > ul > li a:last-child {
   padding-right: 0;
 }
 
-header .container .icon-menu nav ul li a.active {
+header .container .icon-menu nav > ul > li a.active {
   color: #57b1ba;
 }
 
-header .container .icon-menu nav ul li a:hover i {
+header .container .icon-menu nav > ul > li a:hover i {
   color: #57b1ba;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-header .container .icon-menu nav ul li a i {
+header .container .icon-menu nav > ul > li a i {
   font-size: 18px;
   padding: 20px;
   font-weight: 400;
@@ -202,7 +203,7 @@ header .container .icon-menu nav ul li a i {
   transition: all 0.2s ease-in;
 }
 
-header .container .icon-menu nav ul li form {
+header .container .icon-menu nav > ul > li form {
   position: absolute;
   top: 0;
   left: 0;
@@ -219,49 +220,89 @@ header .container .icon-menu nav ul li form {
   transition: all 0.4s linear;
 }
 
-header .container .icon-menu nav ul li form input {
+header .container .icon-menu nav > ul > li form input {
   width: 500px;
 }
 
-header .container .icon-menu nav ul li form input::-webkit-input-placeholder {
+header .container .icon-menu nav > ul > li form input::-webkit-input-placeholder {
   color: #555555;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 3px;
 }
 
-header .container .icon-menu nav ul li form input:-ms-input-placeholder {
+header .container .icon-menu nav > ul > li form input:-ms-input-placeholder {
   color: #555555;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 3px;
 }
 
-header .container .icon-menu nav ul li form input::-ms-input-placeholder {
+header .container .icon-menu nav > ul > li form input::-ms-input-placeholder {
   color: #555555;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 3px;
 }
 
-header .container .icon-menu nav ul li form input::placeholder {
+header .container .icon-menu nav > ul > li form input::placeholder {
   color: #555555;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 3px;
 }
 
-header .container .icon-menu nav ul li form button i {
+header .container .icon-menu nav > ul > li form button i {
   font-size: 18px;
   font-weight: 200;
   color: #555555;
 }
 
-header .container .icon-menu nav ul li form #close {
+header .container .icon-menu nav > ul > li form #close {
   padding-left: 50px;
 }
 
-header .container .icon-menu nav ul li form #close i {
+header .container .icon-menu nav > ul > li form #close i {
+  color: #57b1ba;
+}
+
+header .container .icon-menu nav > ul > li:hover .dropdown-user {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+header .container .icon-menu nav > ul > li .dropdown-user {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(60px, 42px);
+          transform: translate(60px, 42px);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-box-shadow: 0 0 2px 1px rgba(204, 204, 204, 0.4);
+          box-shadow: 0 0 2px 1px rgba(204, 204, 204, 0.4);
+}
+
+header .container .icon-menu nav > ul > li .dropdown-user ul li {
+  width: 180px;
+  height: 50px;
+  background: white;
+}
+
+header .container .icon-menu nav > ul > li .dropdown-user ul li a {
+  padding: 5px 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #555555;
+}
+
+header .container .icon-menu nav > ul > li .dropdown-user ul li a:hover {
   color: #57b1ba;
 }
 /*# sourceMappingURL=header.css.map */
