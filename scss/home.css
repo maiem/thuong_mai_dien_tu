@@ -244,8 +244,8 @@ textarea:focus {
   color: white;
   font-size: 18px;
   text-transform: capitalize;
-  -webkit-transition: all .4s ease-in;
-  transition: all .4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .slider .slide-show .center a:hover {
@@ -497,6 +497,17 @@ textarea:focus {
   text-transform: uppercase;
 }
 
+.difference .tittle-center h1 {
+  padding: 10px 50px;
+  color: #57b1ba;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.difference .tittle-center h1::first-letter {
+  text-transform: capitalize;
+}
+
 .difference .support-block .container {
   text-align: center;
 }
@@ -548,6 +559,87 @@ textarea:focus {
   font-weight: 600;
 }
 
+.slide-list .tittle-center {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.slide-list .tittle-center h2 {
+  color: #57b1ba;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.slide-list .tittle-center h2::first-letter {
+  text-transform: capitalize;
+}
+
+.slide-list .tittle-center p {
+  color: #808c8d;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.slide-list .tittle-center h1 {
+  padding: 10px 50px;
+  color: #57b1ba;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.slide-list .tittle-center h1::first-letter {
+  text-transform: capitalize;
+}
+
+.slide-list .slide2 a {
+  position: relative;
+}
+
+.slide-list .slide2 a img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-list .slide2 .owl-nav .owl-prev,
+.slide-list .slide2 .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #57b1ba;
+}
+
+.slide-list .slide2 .owl-nav .owl-prev i,
+.slide-list .slide2 .owl-nav .owl-next i {
+  font-size: 15px;
+  font-weight: 600;
+  color: gray;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.slide-list .slide2 .owl-nav .owl-prev:hover,
+.slide-list .slide2 .owl-nav .owl-next:hover {
+  background: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.slide-list .slide2 .owl-nav .owl-prev {
+  left: 10px;
+}
+
+.slide-list .slide2 .owl-nav .owl-next {
+  right: 10px;
+}
+
 .face-mark .tittle-center {
   padding: 50px 0;
   text-align: center;
@@ -568,6 +660,17 @@ textarea:focus {
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.face-mark .tittle-center h1 {
+  padding: 10px 50px;
+  color: #57b1ba;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.face-mark .tittle-center h1::first-letter {
+  text-transform: capitalize;
 }
 
 .face-mark .support-face-mark .container {
@@ -646,6 +749,60 @@ textarea:focus {
   font-weight: 600;
 }
 
+.sectionX {
+  margin: 100px 0;
+  text-align: center;
+  background-image: url("https://cdn.shopify.com/s/files/1/0396/3509/1612/files/bg_245480c5-1f59-42ff-8491-923d2f6e428b_1920X.jpg?v=1591594397");
+  background-attachment: fixed;
+  height: 450px;
+}
+
+.sectionX .tittle-center {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.sectionX .tittle-center h2 {
+  color: #57b1ba;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.sectionX .tittle-center h2::first-letter {
+  text-transform: capitalize;
+}
+
+.sectionX .tittle-center p {
+  color: #808c8d;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sectionX .tittle-center h1 {
+  padding: 10px 50px;
+  color: #57b1ba;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.sectionX .tittle-center h1::first-letter {
+  text-transform: capitalize;
+}
+
+.sectionX .btn {
+  margin-bottom: 50px;
+}
+
+.sectionX .btn a {
+  padding: 8px 30px;
+  background: #57b1ba;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  border-radius: 4px;
+}
+
 .equipment {
   margin-bottom: 30px;
 }
@@ -670,6 +827,17 @@ textarea:focus {
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.equipment .tittle-center h1 {
+  padding: 10px 50px;
+  color: #57b1ba;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.equipment .tittle-center h1::first-letter {
+  text-transform: capitalize;
 }
 
 .equipment .support-equipment .container {

@@ -71,18 +71,18 @@ header {
               position: absolute;
               top: 50%;
               left: 0;
-              transform: translate(-50px,42px);
+              transform: translate(-45px,42px);
               transition: all 0.4s linear;
 
               box-shadow: 0 0 2px 1px rgba($color: #ccc, $alpha: 0.4);
 
               ul {
                 li {
-                  width: 200px;
+                  width: 190px;
                   background: white;
 
                   a {
-                    padding: 5px 50px;
+                    padding: 5px 40px;
                     font-size: 14px;
                     font-weight: 600;
                     color: $secondaryColor;
@@ -119,10 +119,6 @@ header {
             position: relative;
 
             a {
-              &:last-child {
-                padding-right: 0;
-              }
-
               &.active {
                 color: $primaryColor;
               }
@@ -181,6 +177,7 @@ header {
 
               #close {
                 padding-left: 50px;
+
                 i {
                   color: $primaryColor;
                 }
@@ -196,6 +193,7 @@ header {
             }
 
             .dropdown-user {
+              width: 140px;
               visibility: hidden;
               opacity: 0;
               z-index: 2;
@@ -203,19 +201,18 @@ header {
               position: absolute;
               top:50%;
               right: 0;
-              transform: translateY(42px);
+              transform: translate(40px,42px);
               transition: all 0.4s linear;
 
               box-shadow: 0 0 2px 1px rgba($color: #ccc, $alpha: 0.4);
+              text-align: start;
 
               ul {
                 li {
-                  width: 180px;
-                  height: 50px;
                   background: white;
 
                   a {
-                    padding: 5px 50px;
+                    padding: 5px 35px;
                     font-size: 14px;
                     font-weight: 600;
                     text-transform: capitalize;

@@ -151,6 +151,17 @@ textarea:focus {
   text-transform: uppercase;
 }
 
+.contact-form .container h1 {
+  padding: 10px 50px;
+  color: #57b1ba;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.contact-form .container h1::first-letter {
+  text-transform: capitalize;
+}
+
 .contact-form .container form {
   margin: 20px;
   display: -webkit-box;

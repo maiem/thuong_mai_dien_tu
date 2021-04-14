@@ -95,6 +95,17 @@ textarea:focus {
   text-transform: uppercase;
 }
 
+.order-status .container .tittle-content h1 {
+  padding: 10px 50px;
+  color: #57b1ba;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.order-status .container .tittle-content h1::first-letter {
+  text-transform: capitalize;
+}
+
 .order-status .container .content p {
   font-size: 17px;
   font-weight: 300;

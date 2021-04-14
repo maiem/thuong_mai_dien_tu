@@ -75,14 +75,8 @@ textarea:focus {
   -ms-flex-preferred-size: 24%;
       flex-basis: 24%;
   text-align: center;
-  margin-right: 14.667px;
-  margin-bottom: 20px;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-}
-
-.list-products .container ul#myList li:nth-child(4n) {
-  margin-right: 0;
 }
 
 .list-products .container ul#myList li:hover .product-box .product-detail {

@@ -133,8 +133,8 @@ header .container .main-menu nav > ul > li .dropdown-category {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translate(-50px, 42px);
-          transform: translate(-50px, 42px);
+  -webkit-transform: translate(-45px, 42px);
+          transform: translate(-45px, 42px);
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
   -webkit-box-shadow: 0 0 2px 1px rgba(204, 204, 204, 0.4);
@@ -142,12 +142,12 @@ header .container .main-menu nav > ul > li .dropdown-category {
 }
 
 header .container .main-menu nav > ul > li .dropdown-category ul li {
-  width: 200px;
+  width: 190px;
   background: white;
 }
 
 header .container .main-menu nav > ul > li .dropdown-category ul li a {
-  padding: 5px 50px;
+  padding: 5px 40px;
   font-size: 14px;
   font-weight: 600;
   color: #555555;
@@ -178,10 +178,6 @@ header .container .icon-menu nav > ul > li {
 
 header .container .icon-menu nav > ul > li:last-child {
   margin-right: 0;
-}
-
-header .container .icon-menu nav > ul > li a:last-child {
-  padding-right: 0;
 }
 
 header .container .icon-menu nav > ul > li a.active {
@@ -274,28 +270,28 @@ header .container .icon-menu nav > ul > li:hover .dropdown-user {
 }
 
 header .container .icon-menu nav > ul > li .dropdown-user {
+  width: 140px;
   visibility: hidden;
   opacity: 0;
   z-index: 2;
   position: absolute;
   top: 50%;
   right: 0;
-  -webkit-transform: translateY(42px);
-          transform: translateY(42px);
+  -webkit-transform: translate(40px, 42px);
+          transform: translate(40px, 42px);
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
   -webkit-box-shadow: 0 0 2px 1px rgba(204, 204, 204, 0.4);
           box-shadow: 0 0 2px 1px rgba(204, 204, 204, 0.4);
+  text-align: start;
 }
 
 header .container .icon-menu nav > ul > li .dropdown-user ul li {
-  width: 180px;
-  height: 50px;
   background: white;
 }
 
 header .container .icon-menu nav > ul > li .dropdown-user ul li a {
-  padding: 5px 50px;
+  padding: 5px 35px;
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;

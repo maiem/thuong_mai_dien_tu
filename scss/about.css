@@ -147,6 +147,17 @@ textarea:focus {
   text-transform: uppercase;
 }
 
+.about-blog2 .tittle-center h1 {
+  padding: 10px 50px;
+  color: #57b1ba;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.about-blog2 .tittle-center h1::first-letter {
+  text-transform: capitalize;
+}
+
 .about-blog2 .about-blog2-detail .container {
   display: -webkit-box;
   display: -ms-flexbox;

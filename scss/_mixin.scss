@@ -18,6 +18,17 @@
     letter-spacing: 2px;
     text-transform: uppercase;
   }
+
+  h1{
+    padding: 10px 50px;
+    color: $primaryColor;
+    font-size: 50px;
+    letter-spacing: 2px;
+
+    &::first-letter{
+      text-transform: capitalize;
+    }
+  }
 }
 
 @mixin section-box($border) {

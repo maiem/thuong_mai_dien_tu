@@ -24,7 +24,7 @@
         right: 50%;
         top: 25%;
         padding-bottom: 50px;
-        transform: translate(50%,-25%);
+        transform: translate(50%, -25%);
         color: $primaryColor;
         font-size: 20px;
         font-weight: 400;
@@ -37,27 +37,27 @@
         right: 50%;
         top: 35%;
 
-        transform: translate(50%,-35%);
+        transform: translate(50%, -35%);
         color: $secondaryColor;
         font-size: 40px;
         font-weight: 700;
         text-transform: capitalize;
         line-height: 1;
       }
-    
-      a{
+
+      a {
         position: absolute;
         right: 50%;
         top: 60%;
-        transform: translate(50%,-60%);
+        transform: translate(50%, -60%);
         padding: 10px 35px;
         border-radius: 8px;
         background: $primaryColor;
         color: white;
         font-size: 18px;
         text-transform: capitalize;
-        transition: all .4s ease-in;
-    
+        transition: all 0.4s ease-in;
+
         &:hover {
           background: #33858d;
           transition: all 0.2s ease-in;
@@ -172,6 +172,76 @@
   }
 }
 
+.slide-list {
+  .tittle-center {
+    @include tittle-center;
+  }
+
+  .slide2 {
+    a {
+      position: relative;
+
+      // &.active{
+      //   &::before{
+      //     background: none;
+      //   }
+      // }
+
+      // &::before {
+      //   content: "";
+      //   width: 100%;
+      //   height: 100%;
+
+      //   background: rgba(255, 255, 255, 0.692);
+
+      //   position: absolute;
+      //   top: 0;
+      // }
+
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease-in;
+
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 1px solid $primaryColor;
+
+        i {
+          font-size: 15px;
+          font-weight: 600;
+          color: gray;
+          transition: all 0.3s ease-in;
+        }
+
+        &:hover {
+          background: none;
+          transition: all 0.3s ease-in;
+        }
+      }
+
+      .owl-prev {
+        left: 10px;
+      }
+
+      .owl-next {
+        right: 10px;
+      }
+    }
+  }
+}
+
 .face-mark {
   .tittle-center {
     @include tittle-center;
@@ -208,6 +278,31 @@
           @include section-box(false);
         }
       }
+    }
+  }
+}
+
+.sectionX{
+  margin: 100px 0;
+  text-align: center;
+
+  background-image: url('https://cdn.shopify.com/s/files/1/0396/3509/1612/files/bg_245480c5-1f59-42ff-8491-923d2f6e428b_1920X.jpg?v=1591594397');
+  background-attachment: fixed;
+  height: 450px;
+
+  .tittle-center{
+  @include tittle-center;
+  }
+
+  .btn{
+    margin-bottom: 50px;
+    a{
+      padding: 8px 30px;
+      background: $primaryColor;
+      color: white;
+      font-size: 18px;
+      text-transform: capitalize;
+      border-radius: 4px;
     }
   }
 }
