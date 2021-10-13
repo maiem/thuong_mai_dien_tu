@@ -15,8 +15,8 @@ $(document).ready(function(){
     loop: true,
     dots:false,
     items:3,
-    animateIn: 'fadeIn',
     animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
     nav:true,
     navText: ['<i class="fas fa-chevron-left"></i>'
               , '<i class="fas fa-chevron-right"></i>']
